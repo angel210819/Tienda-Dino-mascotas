@@ -1,12 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Rutas from "./componets/Rutas";
 
 function App() {
-  return (
-    <div className="App">
-      Hola Mundo
-    </div>
-  );
+  return <Rutas />;
 }
 
 export default App;
