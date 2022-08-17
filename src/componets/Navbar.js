@@ -1,30 +1,37 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import {
+  AppBar,
+  Button,
+  Toolbar,
+  Typography,
+  Link,
+  IconButton,
+} from "@mui/material";
+import { Box } from "@mui/system";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink to="/">Inicio</NavLink>
-        </li>
-        <li>
-          <NavLink to="/perros" activeClassName="active">
-            Alimetos Caninos
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/gatos" activeClassName="active">
+    <Box sx={{ flexGrow: 3, marginBottom: 1 }}>
+      <AppBar position="static">
+        <Toolbar sx={{ display: "flex", justifyContent: "space-around" }}>
+          <Button href="/" variant="text" color="inherit">
+            Inicio
+          </Button>
+
+          <Button href="/perros" variant="text" color="inherit">
+            Alimentos Caninos
+          </Button>
+
+          <Button href="/gatos" variant="text" color="inherit">
             Alimentos Felinos
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/accesorios" activeClassName="active">
+          </Button>
+
+          <Button href="/accesorios" variant="text" color="inherit">
             Accesorios
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 };
 
