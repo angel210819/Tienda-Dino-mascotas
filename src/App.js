@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+
+import MarcasDestacada from './components/MarcasDestacadas'
 
 function App() {
   return (
     <div className="App">
-      Hola Mundoo
+      <MarcasDestacada />
     </div>
   );
 }
