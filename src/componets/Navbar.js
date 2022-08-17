@@ -96,7 +96,16 @@ const Navbar = () => {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "none",
+                md: "flex",
+                justifyContent: "space-around",
+              },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page.text}
