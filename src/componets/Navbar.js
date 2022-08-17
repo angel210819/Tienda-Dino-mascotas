@@ -13,6 +13,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
+/*Arreglo de objetos con el Texto de los enlaces y las direcciones de las paginas a las que los mismo dirigen */
 const pages = [
   {
     text: "Inicio",
@@ -33,8 +34,10 @@ const pages = [
 ];
 
 const Navbar = () => {
+  /*Estado para hacer responsiva la Navbar */
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  /*Metodos para el menu hamburguesa */
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -44,15 +47,12 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            {/*Icono del boton hamburguesa */}
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -81,6 +81,7 @@ const Navbar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
+              {/*mapeo de las paginas para generar los enlaces en el menu hamburguesa */}
               {pages.map((page) => (
                 <MenuItem key={page.text} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
@@ -106,6 +107,7 @@ const Navbar = () => {
               },
             }}
           >
+            {/*mapeo de las paginas para generar los enlaces en la barra de navegacion */}
             {pages.map((page) => (
               <Button
                 key={page.text}
@@ -120,25 +122,6 @@ const Navbar = () => {
                 </Link>
               </Button>
             ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            ></Menu>
           </Box>
         </Toolbar>
       </Container>
