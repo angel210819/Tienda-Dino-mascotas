@@ -1,9 +1,8 @@
+import Example from "./components/CarInst.js"
 
 function App() {
   return (
-    <div className="App">
-      chau mundo
-    </div>
+		<Example />
   );
 }
 
