@@ -31,7 +31,7 @@ const CarInst = (props) => {
        <div>
         	<CardHeader
 				avatar={<Avatar src="../imagenes/avatar.webp"/>}
-				title='Just a Carousel'
+				title='Tienda'
 				subheader={new Date().toDateString()}
 				action={
 					<IconButton>

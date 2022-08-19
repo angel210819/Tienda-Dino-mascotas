@@ -1,8 +1,8 @@
-import Example from "./components/CarInst.js"
+import CarInst from "./components/CarInst.js"
 
 function App() {
   return (
-		<Example />
+		<CarInst />
   );
 }
 
