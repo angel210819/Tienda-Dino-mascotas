@@ -15,6 +15,7 @@ const SearchBar = () => {
             variant="outlined"
             size="small"
             backgroundColor="white"
+            style={{ background: '#FFFFFF' }}
         />
     </div>
   )
