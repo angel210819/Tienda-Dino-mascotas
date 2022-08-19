@@ -9,12 +9,14 @@ import ts8 from "../imagenes/8.jpeg"
 import ts9 from "../imagenes/9.jpeg"
 import ts10 from "../imagenes/10.jpeg"
 import ts11 from "../imagenes/11.jpg"
-import ts12 from "../imagenes/12.webp"
+import ts12 from "../imagenes/12.jpg"
+import ts13 from "../imagenes/13.jpg"
 
 export const Imagenes = [
     {
       id:1,
       img: ts1,
+
     },
     {
       id:2,
@@ -60,4 +62,10 @@ export const Imagenes = [
       id:12,
       img: ts12,
     },
+    {
+      id:13,
+      img: ts13,
+    },
   ];
+
+  
