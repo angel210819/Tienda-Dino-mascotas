@@ -14,7 +14,7 @@ const SearchBar = () => {
             defaultValue="Buscar"
             variant="outlined"
             size="small"
-            backgroundColor="blue"
+            backgroundColor="white"
         />
     </div>
   )

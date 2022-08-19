@@ -19,7 +19,7 @@ export default function DenseAppBar() {
             <SearchBar  /> 
           </IconButton>
          
-          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ border:1, mr: 10 }}>
+          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 10 }}>
           <img src="https://st2.depositphotos.com/4060975/8056/v/600/depositphotos_80565476-stock-illustration-magnifier-vector-icon.jpg" alt="Dino" height="25" width="25" />
           </IconButton>
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ ml: 55 }}>
