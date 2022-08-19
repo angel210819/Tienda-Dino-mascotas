@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import { Paper } from "@mui/material";
+import CardActions from '@material-ui/core/CardActions'
+import CardHeader from '@material-ui/core/CardHeader'
 
 import { Button } from "@mui/material";
 import { Imagenes } from "./CarruselData.js";
@@ -10,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SendIcon from '@mui/icons-material/Send';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import CardActions from '@material-ui/core/CardActions'
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const CarInst = (props) => {  
     const items = Imagenes
@@ -28,8 +29,16 @@ const CarInst = (props) => {
     >
       {items.map((item, i) => (
        <div>
-        <Avatar alt="Remy Sharp" src="../imagenes/avatar.webp" />
-        <h1>Tienda</h1>
+        	<CardHeader
+				avatar={<Avatar src="../imagenes/avatar.webp"/>}
+				title='Just a Carousel'
+				subheader={new Date().toDateString()}
+				action={
+					<IconButton>
+						<MoreVertIcon />
+					</IconButton>
+				}
+			/>
         <img key={item.id}
         src={item.img}
         alt="Uno"
@@ -51,13 +60,6 @@ const CarInst = (props) => {
   );
 };
 
-const Item = (props) => {
-  return (
-    <Paper>
-      <h2>{props.item.name}</h2>
-      <p>{props.item.description}</p>
-    </Paper>
-  );
-};
+
 
 export default CarInst;
