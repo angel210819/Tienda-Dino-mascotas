@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 //import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import SearchBar from './SearchBar';
+import Logo from './../images/Logo2.JPG'
 
 
 export default function DenseAppBar() {
@@ -13,7 +14,7 @@ export default function DenseAppBar() {
       <AppBar position="static">
         <Toolbar variant="dense">
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 30 }}>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8IU2S9XtjmHtU4crrQmrDi_wAgBsUutfISg&usqp=CAU" alt="Dino" height="25" width="25" />
+          <img src={Logo} alt="Dino" height="25" width="25" />
           </IconButton>
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ ml: 65 }}>
             <SearchBar/> 
