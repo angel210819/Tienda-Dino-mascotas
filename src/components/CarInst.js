@@ -3,7 +3,7 @@ import Carousel from "react-material-ui-carousel";
 import CardActions from '@material-ui/core/CardActions';
 import CardHeader from '@material-ui/core/CardHeader';
 
-import { Button } from "@mui/material";
+
 import { Imagenes } from "./CarruselData.js";
 
 
@@ -20,20 +20,11 @@ import Ava from "../imagenes/avatar.jpeg"
 const CarInst = (props) => {  
     const items = Imagenes
     return (
-    <Carousel 
-      //boton previous y next
-      NavButton={({ onClick, className, style, next, prev }) => {
-        return (
-          <Button onClick={onClick} className={className} style={style}>
-            {next && " "}
-            {prev && " "}
-          </Button>
-        );
-      }}
-    >
+    <Carousel style={{width: 420}}>
       {items.map((item, i) => (
        <div>
-        	<CardHeader style={{height: 0, display: 'flex' ,width: 300, margin: "auto", marginTop:20,}}
+      {/* Avatar */}
+        	<CardHeader style={{height: 0, display: 'flex' ,width: 405, margin: "auto", marginTop:20,}}
 				avatar={<Avatar src = {Ava}/>}
 				title='Dino-Mascotas'
 				subheader={new Date().toDateString()}
@@ -43,11 +34,15 @@ const CarInst = (props) => {
 					</IconButton>
 				}
 			/>
-        <img style={{height: '50vh', display: 'flex' ,width: 300, margin: "auto", marginTop:40 , marginBlock:15}} key={item.id} 
+      {/* Imagenes */}
+        <img style={{objectFit:"scale-down", height: '75vh', display: 'flex' ,width: 400, margin: "auto", marginTop:40 , marginBlock:15}} key={item.id} 
         src={item.img}
         alt="Uno" 
       />
-      		<CardActions disableSpacing style={{height: 0, display: 'flex' ,width: 300, margin:"auto", marginBlock:20}}> 
+      
+      {/* Botones Me gusta, Comentar y Enviar */}
+      
+      		<CardActions disableSpacing style={{height: 0, display: 'flex' ,width: 420, margin:"auto", marginBlock:20}}> 
 				<IconButton>
 					<FavoriteBorderIcon />
 				</IconButton>
@@ -58,14 +53,19 @@ const CarInst = (props) => {
 					<SendIcon />
 				</IconButton>
 			</CardActions>
+      <br/>
       </div> 
       ))}
+    
     </Carousel>
+  
   );
 };
 
 
 
 export default CarInst;
+
+
 
 

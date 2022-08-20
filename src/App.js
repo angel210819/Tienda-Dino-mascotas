@@ -1,8 +1,9 @@
-import CarInst from "./components/CarInst.js"
+ import CarInst from "./components/CarInst"
+
 
 function App() {
   return (
-		<CarInst />
+		<CarInst/>
   );
 }
 
