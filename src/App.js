@@ -1,5 +1,4 @@
-
-
+import CarInst from "./components/CarInst"
 import Detalle from './components/Detalle';
 import Footer from './components/Footer';
 import MarcasDestacada from './components/MarcasDestacadas'
@@ -11,6 +10,7 @@ function App() {
       <Header />
     <Detalle />
       <MarcasDestacada />
+      <CarInst/>
       <Footer/>
     </div>
   );
