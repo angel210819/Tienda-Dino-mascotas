@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact/stylescon.css">
+    <title>Reservaciones Café Le Grand</title>
+</head>
+
+    <body>
+        <main>         
+            <h1 class="reserv">Reservaciones</h1>
+            <form>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id=="name" name="name" required autofocus>
+                </div> 
+                
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text"  id="apellido" name="apellido" required>
+                </div> 
+            
+                <div>
+                    <label for="bdate">Fecha de Reservación:</label> 
+                    <input type="date" id="bdate"  name="bdate" required>
+                </div> 
+        
+                <div>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail"  name="mail" size="40" required>
+                </div>
+                            
+                <div>
+                    <label for="horario">Horario que solicita:</label> 
+                        <select name="horario">
+                            <option value="Desayuno">Desayuno</option>
+                            <option value="Brunch">Brunch</option>
+                            <option value="Almuerzo" selected>Almuerzo</option> 
+                            <option value="Cena">Cena</option>
+                        </select> 
+                </div>
+                    
+                <div>
+                    <label for="res">Ha hecho antes una reservación?:</label> <br>
+                        <input type="radio" name="res" value="si" checked> 
+                        <label for="res">Sí</label> 
+            
+                        <input type="radio"  name="res" value="no"> 
+                        <label for="res">No</label>
+                </div>
+                
+                <p> 
+                    <textarea name="t-area" cols="34" rows="10" placeholder="Escriba sus comentarios"></textarea> <br>
+                </p>
+                
+                <button>Enviar</button> 
+                <input class= "resett" type="reset" value="Restaurar">
+            </form>
+
+            <a class="a-menu"; href="../index.html">Volver a la página principal</a> 
+        </main>
+        
+    </body>
+    </html>

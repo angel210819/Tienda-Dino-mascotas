@@ -1,11 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import DogsServices from './Components/DogsServices2';
+import Services from './Components/Services';
+// import FormPropsTextFields from './Components/Formulario';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Hola Mundo
-    </div>
+      <section>
+        <Services/>
+        <hr/>
+        {/* <FormPropsTextFields/> */}
+      </section>
+    // </div>
   );
 }
 
