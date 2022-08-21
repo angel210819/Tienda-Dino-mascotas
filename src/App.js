@@ -1,5 +1,5 @@
 import React from "react";
-import Rutas from "./componets/Rutas";
+import Rutas from "./components/Rutas";
 
 function App() {
   return <Rutas />;
