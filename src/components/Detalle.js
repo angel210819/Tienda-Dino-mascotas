@@ -1,3 +1,4 @@
+import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
@@ -19,7 +20,8 @@ const imagenesDetalles = [
   {
     id: 3,
     title: "ENVIOS SIN CARGO",
-    text: "Comprando el monto minimo tenes el delivery gratis, si vivis hasta 6km de cada sucursal",
+    text:
+      "Comprando el monto minimo tenes el delivery gratis, si vivis hasta 6km de cada sucursal",
     image:
       "https://petplanetshop.com.ar/images/link_column_image/3?w=100&h=93&fit=crop&dpr=1&q=80",
   },
