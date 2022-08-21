@@ -116,9 +116,14 @@ const Navbar = () => {
               >
                 <Link
                   to={page.direction}
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                  }}
                 >
-                  {page.text}
+                  <Typography variant="overline" display="block">
+                    {page.text}
+                  </Typography>
                 </Link>
               </Button>
             ))}
