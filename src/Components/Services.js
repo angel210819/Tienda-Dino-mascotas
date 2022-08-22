@@ -9,7 +9,7 @@ import Divider from '@mui/material/Divider';
 import { Link } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#AFEEEE',
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#AFDBF5',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
@@ -28,7 +28,7 @@ export default function Services() {
     <Box sx={{ width: '100%' }}>
 
     <Grid item xs>
-      <Typography gutterBottom variant="h4" component="div" color="#1ca9c9">
+      <Typography gutterBottom variant="h4" component="div" color="#6495ED">
         Servicios Caninos
       </Typography>
     </Grid>
@@ -44,7 +44,7 @@ export default function Services() {
          <Item>
             <Grid item xs container direction="column" spacing={2}>
                 <Grid item xs>
-                  <Typography gutterBottom variant="subtitle1" color="#00CCFF" component="div" fontSize={25}>
+                  <Typography gutterBottom variant="subtitle1" color="#6495ED" component="div" fontSize={25}>
                     Adiestramiento Canino
                   </Typography>
 
@@ -64,7 +64,7 @@ export default function Services() {
           <Item>
             <Grid item xs container direction="column" spacing={2}>
                 <Grid item xs>
-                  <Typography gutterBottom variant="subtitle1" color="#00CCFF" component="div"  fontSize={25}>
+                  <Typography gutterBottom variant="subtitle1" color="#6495ED" component="div"  fontSize={25}>
                     Paseos Caninos
                   </Typography>
     
