@@ -1,7 +1,5 @@
-// import logo from './logo.svg';
-// import DogsServices from './Components/DogsServices2';
+import React from "react";
 import Services from './Components/Services';
-// import FormPropsTextFields from './Components/Formulario';
 import './App.css';
 
 function App() {
@@ -13,6 +11,6 @@ function App() {
       </section>
     // </div>
   );
-}
+  }
 
 export default App;
