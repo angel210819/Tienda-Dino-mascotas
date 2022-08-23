@@ -7,8 +7,8 @@ const MarcasDestacadas = () => {
       <Grid
         container
         columns={{ xs: 2, sm: 3, md: 4 }}
-        gap="15px"
         justifyContent="center"
+        gap='5px'
       >
         {Marcas.map((item, index) => {
           return (
