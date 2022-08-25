@@ -7,6 +7,7 @@ import Accesorios from "./Accesorios";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
+import Prueba from "./Prueba"
 
 const Rutas = () => {
   return (
@@ -18,6 +19,7 @@ const Rutas = () => {
         <Route path="/gatos" element={<Gatos />} />
         <Route path="/perros" element={<Perros />} />
         <Route path="/accesorios" element={<Accesorios />} />
+        <Route path="/prueba" element={<Prueba />} />
       </Routes>
       <Footer />
     </Router>
