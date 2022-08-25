@@ -1,7 +1,7 @@
 {
   "Felinos":[
     {
-      "char_id": 1,
+      "id": 1,
       "tipo": "comida",
       "marca": "Fit Formula",
       "nombre": "Fit Formula Gato Adulto",
@@ -12,7 +12,7 @@
     },
 
     {
-      "char_id": 2,
+      "id": 2,
       "tipo": "comida",
       "marca": "Royal Canin",
       "nombre": "Royal Canin Indoor",
@@ -23,7 +23,7 @@
     },
 
     {
-      "char_id": 3,
+      "id": 3,
       "tipo": "comida",
       "marca": "Summit 10",
       "nombre": "Summit 10 Cat Light And Sterilised",
@@ -34,7 +34,7 @@
     },
 
     {
-      "char_id": 4,
+      "id": 4,
       "tipo": "comida",
       "marca": "Vet Life",
       "nombre": "Vet Life Cat Renal",
@@ -45,7 +45,7 @@
     },
 
     {
-      "char_id": 5,
+      "id": 5,
       "tipo": "comida",
       "marca": "Acana",
       "nombre": "Acana Cat Bountiful Catch",
@@ -58,7 +58,7 @@
 
   "Caninos":[
     {
-      "char_id": 6,
+      "id": 6,
       "tipo": "comida",
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Small / Medium Breed Salmón",
@@ -69,7 +69,7 @@
     },
 
     {
-      "char_id": 7,
+      "id": 7,
       "tipo": "comida",
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Large Lamb & Rice",
@@ -80,7 +80,7 @@
     },
 
     {
-      "char_id": 8,
+      "id": 8,
       "tipo": "comida",
       "marca": "Acana",
       "nombre": "Acana Dog Classic Praire Pultry",
@@ -91,7 +91,7 @@
     },
 
     {
-      "char_id": 9,
+      "id": 9,
       "tipo": "comida",
       "marca": "Pro Plan",
       "nombre": "Alimento seco para perro PRO PLAN Dietas Veterinarias Cardiaco",
@@ -102,7 +102,7 @@
     },
 
     {
-      "char_id": 10,
+      "id": 10,
       "tipo": "comida",
       "marca": "Amity",
       "nombre": "Amity Low Grain Chicken Adulto",
