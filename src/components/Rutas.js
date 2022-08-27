@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Prueba from "./Prueba"
 
+
 const Rutas = () => {
   return (
     <Router>
