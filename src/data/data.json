@@ -2,7 +2,6 @@
   "Felinos":[
     {
       "id": 1,
-      "tipo": "comida",
       "marca": "Fit Formula",
       "nombre": "Fit Formula Gato Adulto",
       "peso": "10kg",
@@ -13,7 +12,6 @@
 
     {
       "id": 2,
-      "tipo": "comida",
       "marca": "Royal Canin",
       "nombre": "Royal Canin Indoor",
       "peso": "1.5kg",
@@ -24,7 +22,6 @@
 
     {
       "id": 3,
-      "tipo": "comida",
       "marca": "Summit 10",
       "nombre": "Summit 10 Cat Light And Sterilised",
       "peso": "1.5kg",
@@ -35,7 +32,6 @@
 
     {
       "id": 4,
-      "tipo": "comida",
       "marca": "Vet Life",
       "nombre": "Vet Life Cat Renal",
       "peso": "2kg",
@@ -46,70 +42,162 @@
 
     {
       "id": 5,
-      "tipo": "comida",
       "marca": "Acana",
       "nombre": "Acana Cat Bountiful Catch",
       "peso": "1.8kg",
       "descripcion": "Alimento para gatos adultos. producto de alta calidad con proteínas de salmón, bagre y arenque fresco o crudo, entero capturado en la naturaleza. Fabricado en EE. UU.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_acanacatbountifulcatch1-8kg6595.jpg?188",
       "precio": 10200
+    },
+    {
+      "id": 6,
+      "marca": "Whiskas",
+      "nombre": "Whiskas Gatitos Carne y Leche",
+      "peso": "10kg",
+      "descripcion": "La receta de Whiskas® Gatitos brinda a tu gatito una alimentación 100% completa y balanceada para ayudarlo a crecer sano y fuerte.",
+      "img": "https://www.timberline.com.ar/5320-large_default/whiskas-adulto-pescado-x-10-kg.jpg",
+      "precio": 5277
+    },
+
+    {
+      "id": 7,
+      "marca": "Excellent",
+      "nombre": "Alimento Excellent Urinary Arroz y Pollo para Gato",
+      "peso": "7,5kg",
+      "descripcion": "Posee todas las proteínas, vitaminas y minerales para cubrir los requerimientos de gatos adultos. Calidad Standar.",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/167605-1000-1000/150029.jpg?v=637021777692670000",
+      "precio": 8540
+    },
+
+    {
+      "id": 8,
+      "marca": "Old Prince",
+      "nombre": "Old Prince Gato Adulto Urinary Care",
+      "peso": "7.5kg",
+      "descripcion": "Alimento para gatos adultos con tendencia a contraer afecciones en su sistema urinario. ",
+      "img": "https://www.timberline.com.ar/5069-large_default/old-prince-gato-adulto-urinary-care-x-75-kg.jpg",
+      "precio": 5700
+    },
+
+    {
+      "id": 9,
+      "marca": "Purina",
+      "nombre": "Pro Plan Gato Adulto Live Clear",
+      "peso": "1kg",
+      "descripcion": "El Alimento Pro Pran Live Clear, es un alimento revolucionario para gatos que reduce los alérgenos en su pelo y caspa en un promedio de 47% a partir de la tercera semana de alimentación diaria.",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/179738-1000-1000/7613287119605_1.png?v=637570861153000000",
+      "precio": 2640
+    },
+
+    {
+      "id": 10,
+      "marca": "Fawna",
+      "nombre": "Alimento Fawna Gato Kitten",
+      "peso": "3kg",
+      "descripcion": "El Alimento Fawna Gato Kitten es una opción natural y de calidad superior, que le brinda a tu gato una alimentación saludable y completa en sus primeros meses de vida.",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/182476-1000-1000/123087.jpg?v=637667062999730000",
+      "precio": 4620
     }
   ],
 
   "Caninos":[
     {
-      "id": 6,
-      "tipo": "comida",
+      "id": 1,
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Small / Medium Breed Salmón",
       "peso": "12kg",
       "descripcion": "Alimento libre de granos para perros desde 1 a 7 años de razas pequeñas y medianas (1 a 25kg). Fórmulado con Salmón.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_brit-care-adult-small-medium-breed-salmo-n8759.jpg?188",
-      "precio": 59990
+      "precio": 5999
     },
 
     {
-      "id": 7,
-      "tipo": "comida",
+      "id": 2,
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Large Lamb & Rice",
       "peso": "12kg + 2kg",
       "descripcion": "Alimento para perros adultos con fórmula hipoalergénica a base de cordero y arroz para perros adultos (2 a 6 años) de razas grandes (más de 25kg)",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/M_britcareadultlargelamb-rice12kg2kggratis2300.jpg?188",
-      "precio": 58800
+      "precio": 5880
     },
 
     {
-      "id": 8,
-      "tipo": "comida",
+      "id": 3,
       "marca": "Acana",
       "nombre": "Acana Dog Classic Praire Pultry",
       "peso": "2kg",
       "descripcion": "Alimento con pollo y pavo para perros de todas las razas y todas las etapas de vida.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_acana-dog-classic-praire-pultry6512.jpg?188",
-      "precio": 15990
+      "precio": 3599
     },
 
     {
-      "id": 9,
-      "tipo": "comida",
+      "id": 4,
       "marca": "Pro Plan",
       "nombre": "Alimento seco para perro PRO PLAN Dietas Veterinarias Cardiaco",
       "peso": "7.5kg",
       "descripcion": "Alimento para perros adultos de todas las razas, indicado para el soporte nutricional al tratamiento en la enfermedad cardíaca degenerativa de la válvula mitral desde los estadíos tempranos.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_alimentosecoparaperroproplan-dietasveterinariascardiaco1459.jpg?188",
-      "precio": 39990
+      "precio": 3999
     },
 
     {
-      "id": 10,
-      "tipo": "comida",
+      "id": 5,
       "marca": "Amity",
       "nombre": "Amity Low Grain Chicken Adulto",
       "peso": "4kg",
       "descripcion": "Amity Low Grain Chicken Adult es un alimento para perros adultos de todas las razas y tamaños formulado con pollo, arroz integral y verduras. Alimento hipoalergénico y Libre de GMO.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_amity_2_novapet2394.jpg?188",
-      "precio": 13990
+      "precio": 4399
+    },
+    {
+      "id": 6,
+      "marca": "Maintenance Criadores",
+      "nombre": "Maintenance Criadores Adulto",
+      "peso": "22kg",
+      "descripcion": "El Alimento Maintenance Criadores Adulto está desarrollado especialmente para perros adultos de todos los tamaños, de entre 1 y 7 años de edad.",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/158003-1000-1000/150002.png?v=635894318957130000",
+      "precio": 4140
+    },
+
+    {
+      "id": 7,
+      "marca": "Purina",
+      "nombre": "Alimento Pro Plan Active Mind Perro Mediano y Grande",
+      "peso": "3kg",
+      "descripcion": "Purina Pro Plan provee nutrición de avanzada para proteger a los perros mayores de 7 años, manteniéndolos sanos y activos. ",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/179848-1000-1000/7613287032911_1.png?v=637570861499770000",
+      "precio": 3900
+    },
+
+    {
+      "id": 8,
+      "marca": "Excellent",
+      "nombre": "Alimento Excellent Pollo y Arroz Adulto ",
+      "peso": "15kg",
+      "descripcion": "PURINA® Excellent® ADULT 7+ CHICKEN & RICE brinda una nutrición especializada para los perros que necesitan mejorar su calidad y expectativa de vida. ",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/179348-1000-1000/7613035337763-1.jpg?v=637570858008200000",
+      "precio": 8800
+    },
+
+    {
+      "id": 9,
+      "marca": "Eukanuba",
+      "nombre": "Alimento Eukanuba para Perro Adulto Raza Mediana ",
+      "peso": "15kg",
+      "descripcion": "Las fórmulas para adulto de EUKANUBA aseguran un nivel de glucosa en sangre adecuado y sostenido en el tiempo, y una digestión más prolongada gracias al balance especial entre diferentes tipos de granos.",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/171388-1000-1000/138004.jpg?v=637279089930400000",
+      "precio": 10455
+    },
+
+    {
+      "id": 10,
+      "marca": "Pedigree",
+      "nombre": "Alimento Pedigree Perro Adulto Carne Cereales y Pollo",
+      "peso": "21kg + 3kg",
+      "descripcion": "La selección de un alimento adecuado para tu mascota es muy importante para garantizar su crecimiento, desarrollo y salud. Con esta opción de Pedigree podrás cubrir las necesidades nutricionales y energéticas de tu perro.",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/180957-1000-1000/7797453000710.jpg?v=637611741171370000",
+      "precio": 7800
     }
   ]
 }
