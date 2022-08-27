@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
-import Grid2 from '@mui/material/Unstable_Grid2'
+import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
 
 const Prueba = () => {
@@ -20,31 +20,35 @@ const Prueba = () => {
   return (
     <div>
       <Fragment>
+        <br />
+        <br />
         <Grid2
-          container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          container
+          spacing={{ xs: 10, md: 4 }}
+          columns={{ xs: 5, sm: 1, md: 20 }}
+          justifyContent="center"
         >
           {post.length > 0 ? (
-            post.map((comida, i) => {
+            post.map((comida) => {
               return (
-                <Grid2 xs={2}>
-                <div>
-                  <Cards
-                    key={comida.id}
-                    titlo={comida.marca}
-                    image={comida.img}
-                    contenido={comida.nombre}
-                    peso={comida.peso}
-                    precio={comida.precio}
-                    descripcion={comida.descripcion}
-                  />
-                </div>
+                <Grid2>
+                  <div>
+                    <Cards
+                      key={comida.id}
+                      title={comida.marca}
+                      image={comida.img}
+                      contenido={comida.nombre}
+                      peso={comida.peso}
+                      precio={comida.precio}
+                      descripcion={comida.descripcion}
+                    />
+                  </div>
                 </Grid2>
-              ) ;
+              );
             })
           ) : (
-            <h1>No hay alimento, el bicho se va a cagar de hambre</h1>
+            <h1>Sin existencias</h1>
           )}
-          
         </Grid2>
       </Fragment>
     </div>
