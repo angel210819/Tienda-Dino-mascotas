@@ -7,6 +7,7 @@ import Accesorios from "./Accesorios";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
+import ShoppingCart from "./Carrito/ShoppingCart";
 
 const Rutas = () => {
   return (
@@ -20,6 +21,7 @@ const Rutas = () => {
         <Route path="/accesorios" element={<Accesorios />} />
       </Routes>
       <Footer />
+      <ShoppingCart/>
     </Router>
   );
 };
