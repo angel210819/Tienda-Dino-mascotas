@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
 
-const Prueba = () => {
+const DogFood = () => {
   const [post, setPost] = useState([]);
 
   const obtenerDatos = async () => {
@@ -54,4 +54,4 @@ const Prueba = () => {
   );
 };
 
-export default Prueba;
+export default DogFood;

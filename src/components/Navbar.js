@@ -21,11 +21,11 @@ const pages = [
   },
   {
     text: "Alimentos Caninos",
-    direction: "/perros",
+    direction: "/dogFood",
   },
   {
     text: "Alimentos Felinos",
-    direction: "/gatos",
+    direction: "/catFood",
   },
   {
     text: "Accesorios",

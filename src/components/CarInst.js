@@ -12,7 +12,7 @@ import SendIcon from "@mui/icons-material/Send";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-import Ava from "../imagenes/avatar.jpeg";
+import Ava from "../images/carrusel/avatar.jpeg";
 
 const CarInst = (props) => {
   const items = Imagenes;
