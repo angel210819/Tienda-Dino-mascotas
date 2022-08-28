@@ -9,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -21,7 +22,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function Cards({ titulo, image, contenido, descripcion, precio, peso }) {
+function Cards({ image, nombre, descripcion, precio, peso }) {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -30,13 +31,17 @@ function Cards({ titulo, image, contenido, descripcion, precio, peso }) {
 
   return (
     <Card sx={{ maxWidth: 300 }} padding="200px">
-      <Typography>{titulo}</Typography>
       <CardMedia height="150px" alt="Comida">
-        <img src={image} alt="comida" height="250px" width="300px"></img>
+        <img src={image} alt={nombre} height="250px" width="300px"></img>
       </CardMedia>
       <CardContent height="200px" width="250px">
-        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
-          {contenido}
+        <Typography
+          height="60px"
+          variant="body2"
+          color="text.secondary"
+          textAlign={"center"}
+        >
+          {nombre}
         </Typography>
         <Typography variant="body2" color="text.secondary" textAlign={"center"}>
           {peso}
@@ -46,12 +51,19 @@ function Cards({ titulo, image, contenido, descripcion, precio, peso }) {
           <span>$</span> {precio}
         </Typography>
       </CardContent>
+
       <CardActions disableSpacing>
+        <IconButton
+          color="primary"
+          size="medium"
+          aria-label="add to shopping cart"
+        >
+          <AddShoppingCartIcon />
+        </IconButton>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
-          aria-label="show more"
           height={"200px"}
         >
           <ExpandMoreIcon />

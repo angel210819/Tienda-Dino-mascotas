@@ -35,9 +35,8 @@ const Prueba = () => {
                   <div>
                     <Cards
                       key={comida.id}
-                      title={comida.marca}
                       image={comida.img}
-                      contenido={comida.nombre}
+                      nombre={comida.nombre}
                       peso={comida.peso}
                       precio={comida.precio}
                       descripcion={comida.descripcion}
