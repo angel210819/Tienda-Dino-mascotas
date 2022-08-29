@@ -90,8 +90,7 @@ export default function CallActions() {
             Red Veterinaria
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Conoce el listado de Clinicas Veterinarias asociadas a nuestra
-            tienda
+            Conoce el listado de Clinicas Veterinarias asociadas.
           </Typography>
         </CardContent>
         <CardActions>
