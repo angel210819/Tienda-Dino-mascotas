@@ -11,3 +11,15 @@ body {
   transform: translateY(10px);
   transition: all 0.8 ease ;
 }
+
+.box {
+  box-shadow: 0 0 1rem #00000025 inset;
+  text-align: center;
+  
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
