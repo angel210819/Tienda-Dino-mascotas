@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
-import Perros from "./Perros";
-import Gatos from "./Gatos";
+import DogFood from "./DogFood";
+import CatFood from "./CatFood";
 import Accesorios from "./Accesorios";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
+import ShoppingCart from "./Carrito/ShoppingCart";
 
 const Rutas = () => {
   return (
@@ -15,11 +16,12 @@ const Rutas = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/gatos" element={<Gatos />} />
-        <Route path="/perros" element={<Perros />} />
+        <Route path="/catFood" element={<CatFood />} />
+        <Route path="/dogFood" element={<DogFood />} />
         <Route path="/accesorios" element={<Accesorios />} />
       </Routes>
       <Footer />
+      <ShoppingCart/>
     </Router>
   );
 };
