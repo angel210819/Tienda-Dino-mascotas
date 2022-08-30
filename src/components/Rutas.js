@@ -7,14 +7,12 @@ import Accesorios from "./Accesorios";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
-import Slider from "./Slider";
 
 const Rutas = () => {
   return (
     <Router>
       <Header />
       <Navbar />
-      <Slider />
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/gatos" element={<Gatos />} />
