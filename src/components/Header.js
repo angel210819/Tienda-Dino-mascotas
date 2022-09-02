@@ -13,6 +13,7 @@ import Badge from "@mui/material/Badge";
 
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 export default function ButtonAppBar() {
   const [open, setOpen] = React.useState(false);
@@ -37,18 +38,17 @@ export default function ButtonAppBar() {
             Dino Mascotas.
           </Typography>
           <SearchBar />
-          <Button
+          <Link
             color="inherit"
             onClick={handleOpen}
             open={open}
             onClose={handleClose}
-            href="./pruebabotoncarro"
-            target="_blank"
+            to="./carrito"
           >
             <Badge badgeContent={cart.length} color="secondary">
               <img src={Carro} alt="Carro" height="30" width="30" />
             </Badge>
-          </Button>
+          </Link>
           <Button color="inherit">
             <img src={Fono} alt="Fono" height="30" width="30" />
           </Button>

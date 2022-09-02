@@ -8,6 +8,7 @@ import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
 import ShoppingCart from "./Carrito/ShoppingCart";
+import Carrito from "./Carrito";
 
 import CartProvider from "../components/Contex/CartContex";
 
@@ -22,6 +23,7 @@ const Rutas = () => {
           <Route path="/catFood" element={<CatFood />} />
           <Route path="/dogFood" element={<DogFood />} />
           <Route path="/accesorios" element={<Accesorios />} />
+          <Route path="/carrito" element={<Carrito />} />
         </Routes>
         <Footer />
         <ShoppingCart />
