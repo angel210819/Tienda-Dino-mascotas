@@ -12,7 +12,7 @@ import ShoppingCart from "./Carrito/ShoppingCart";
 const Rutas = () => {
   return (
     <Router>
-      <Header />
+      <Header/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Inicio />} />
