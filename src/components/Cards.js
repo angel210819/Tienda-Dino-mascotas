@@ -25,7 +25,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function Cards({ comida, id, image, nombre, descripcion, precio, peso }) {
+function Cards({ id, image, nombre, descripcion, precio, peso }) {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -64,7 +64,15 @@ function Cards({ comida, id, image, nombre, descripcion, precio, peso }) {
           aria-label="add to shopping cart"
           onClick={() => {
             console.log(cart);
-            setCart([...cart, nombre]);
+            setCart([
+              ...cart,
+              {
+                id: id,
+                nombre: nombre,
+                img: image,
+                precio: precio,
+              },
+            ]);
             console.log(cart);
           }}
         >

@@ -34,7 +34,7 @@ const Prueba = () => {
                 <Grid2>
                   <div>
                     <Cards
-                      key={comida.id}
+                      id={comida.id}
                       title={comida.marca}
                       image={comida.img}
                       contenido={comida.nombre}
