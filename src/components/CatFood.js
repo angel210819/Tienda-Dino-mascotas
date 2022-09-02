@@ -34,7 +34,8 @@ const CatFood = () => {
                 <Grid2>
                   <div>
                     <Cards
-                      key={comida.id}
+                      comida={comida}
+                      id={comida.id}
                       image={comida.img}
                       nombre={comida.nombre}
                       peso={comida.peso}

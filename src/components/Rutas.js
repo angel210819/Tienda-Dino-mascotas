@@ -9,20 +9,24 @@ import Footer from "./Footer";
 import Header from "./Header";
 import ShoppingCart from "./Carrito/ShoppingCart";
 
+import CartProvider from "../components/Contex/CartContex";
+
 const Rutas = () => {
   return (
-    <Router>
-      <Header />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/catFood" element={<CatFood />} />
-        <Route path="/dogFood" element={<DogFood />} />
-        <Route path="/accesorios" element={<Accesorios />} />
-      </Routes>
-      <Footer />
-      <ShoppingCart/>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/catFood" element={<CatFood />} />
+          <Route path="/dogFood" element={<DogFood />} />
+          <Route path="/accesorios" element={<Accesorios />} />
+        </Routes>
+        <Footer />
+        <ShoppingCart />
+      </Router>
+    </CartProvider>
   );
 };
 

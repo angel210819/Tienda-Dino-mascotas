@@ -11,6 +11,9 @@ import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
+import { CartContex } from "../components/Contex/CartContex";
+import { useContext } from "react";
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -22,12 +25,14 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-function Cards({ image, nombre, descripcion, precio, peso }) {
+function Cards({ comida, id, image, nombre, descripcion, precio, peso }) {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
+  const { cart, setCart } = useContext(CartContex);
 
   return (
     <Card sx={{ maxWidth: 300 }} padding="200px">
@@ -57,6 +62,11 @@ function Cards({ image, nombre, descripcion, precio, peso }) {
           color="primary"
           size="medium"
           aria-label="add to shopping cart"
+          onClick={() => {
+            console.log(cart);
+            setCart([...cart, nombre]);
+            console.log(cart);
+          }}
         >
           <AddShoppingCartIcon />
         </IconButton>
