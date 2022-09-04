@@ -40,9 +40,9 @@ export default function SpanningTable() {
                 ></img>
               </TableCell>
               <TableCell>{item.nombre}</TableCell>
-              <TableCell align="right">{7}</TableCell>
+              <TableCell align="right">{item.quantity}</TableCell>
               <TableCell align="right">{item.precio}</TableCell>
-              <TableCell align="right">{7 * item.precio}</TableCell>
+              <TableCell align="right">{item.quantity * item.precio}</TableCell>
             </TableRow>
           ))}
           <TableRow>

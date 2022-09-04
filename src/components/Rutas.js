@@ -7,15 +7,15 @@ import Accesorios from "./Accesorios";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
-import ShoppingCart from "./Carrito/ShoppingCart";
+
 import Carrito from "./Carrito";
 
 import CartProvider from "../components/Contex/CartContex";
 
 const Rutas = () => {
   return (
-    <CartProvider>
-      <Router>
+    <Router>
+      <CartProvider>
         <Header />
         <Navbar />
         <Routes>
@@ -26,9 +26,8 @@ const Rutas = () => {
           <Route path="/carrito" element={<Carrito />} />
         </Routes>
         <Footer />
-        <ShoppingCart />
-      </Router>
-    </CartProvider>
+      </CartProvider>
+    </Router>
   );
 };
 

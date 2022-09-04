@@ -32,7 +32,7 @@ function Cards({ id, image, nombre, descripcion, precio, peso }) {
     setExpanded(!expanded);
   };
 
-  const { cart, setCart } = useContext(CartContex);
+  const { addToCart } = useContext(CartContex);
 
   return (
     <Card sx={{ maxWidth: 300 }} padding="200px" key={id}>
@@ -63,17 +63,12 @@ function Cards({ id, image, nombre, descripcion, precio, peso }) {
           size="medium"
           aria-label="add to shopping cart"
           onClick={() => {
-            console.log(cart);
-            setCart([
-              ...cart,
-              {
-                id: id,
-                nombre: nombre,
-                img: image,
-                precio: precio,
-              },
-            ]);
-            console.log(cart);
+            addToCart({
+              id: id,
+              nombre: nombre,
+              img: image,
+              precio: precio,
+            });
           }}
         >
           <AddShoppingCartIcon />
