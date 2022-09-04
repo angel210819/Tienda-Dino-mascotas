@@ -42,6 +42,26 @@ export default function shoppingReducer(state, action) {
         cart: state.cart.filter((item) => item.id !== action.payload),
       };
     }
+    case TYPES.INCREMENT: {
+      let updatedCart = state.cart.map((curElem) => {
+        if (curElem.id === action.payload) {
+          return { ...curElem, quantity: curElem.quantity + 1 };
+        }
+        return curElem;
+      });
+      return { ...state, cart: updatedCart };
+    }
+
+    case TYPES.DECREMENT: {
+      let updatedCart = state.cart.map((curElem) => {
+          if (curElem.id === action.payload) {
+            return { ...curElem, quantity: curElem.quantity - 1 };
+          }
+          return curElem;
+        })
+        .filter((curElem) => curElem.quantity !== 0);
+      return { ...state, cart: updatedCart };
+    }
     case TYPES.CLEAR_CART:
       return [];
     default:

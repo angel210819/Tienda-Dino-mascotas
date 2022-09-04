@@ -5,6 +5,7 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
+import Button from "@material-ui/core/Button";
 
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
@@ -14,8 +15,8 @@ function subtotal(items) {
 }
 
 export default function SpanningTable() {
-  const { cart } = useContext(CartContex);
-  console.log(cart);
+  const { cart , incrementProduct , decrementProduct } = useContext(CartContex);
+
   return (
     <TableContainer>
       <Table sx={{ minWidth: 700 }} aria-label="spanning table">
@@ -40,7 +41,11 @@ export default function SpanningTable() {
                 ></img>
               </TableCell>
               <TableCell>{item.nombre}</TableCell>
-              <TableCell align="right">{item.quantity}</TableCell>
+              <TableCell align="right">
+                <Button onClick = {() => {incrementProduct(item.id)}}>+</Button>
+                {item.quantity}
+                <Button onClick = {() => {decrementProduct(item.id)}}>-</Button>
+              </TableCell>
               <TableCell align="right">{item.precio}</TableCell>
               <TableCell align="right">{item.quantity * item.precio}</TableCell>
             </TableRow>
