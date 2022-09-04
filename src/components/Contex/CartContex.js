@@ -16,7 +16,7 @@ const CartProvider = (props) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: producto });
   };
 
-  /*const delFromCart = (id, all = false) => {
+  const delFromCart = (id, all = false) => {
     if (all) {
       dispatch({ type: TYPES.REMOVE_ALL_FROM_CART, payload: id });
     } else {
@@ -26,10 +26,12 @@ const CartProvider = (props) => {
 
   const clearCart = () => {
     dispatch({ type: TYPES.CLEAR_CART });
-  };*/
+  };
 
   return (
-    <CartContex.Provider value={{ cart: state.cart, addToCart }}>
+    <CartContex.Provider
+      value={{ cart: state.cart, addToCart, delFromCart, clearCart }}
+    >
       {props.children}
     </CartContex.Provider>
   );
