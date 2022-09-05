@@ -27,17 +27,23 @@ const CartProvider = (props) => {
   const clearCart = () => {
     dispatch({ type: TYPES.CLEAR_CART });
   };
-  const incrementProduct = (productId) => {
-    dispatch({ type: TYPES.INCREMENT, productId});
+  const incrementProduct = (id) => {
+    dispatch({ type: TYPES.INCREMENT, payload: id });
   };
-  const decrementProduct = (productId) => {
-    dispatch({ type: TYPES.DECREMENT, productId});
+  const decrementProduct = (id) => {
+    dispatch({ type: TYPES.DECREMENT, payload: id });
   };
-  
 
   return (
     <CartContex.Provider
-      value={{ cart: state.cart, addToCart, delFromCart, clearCart, decrementProduct, incrementProduct}}
+      value={{
+        cart: state.cart,
+        addToCart,
+        delFromCart,
+        clearCart,
+        decrementProduct,
+        incrementProduct,
+      }}
     >
       {props.children}
     </CartContex.Provider>

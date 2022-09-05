@@ -53,7 +53,8 @@ export default function shoppingReducer(state, action) {
     }
 
     case TYPES.DECREMENT: {
-      let updatedCart = state.cart.map((curElem) => {
+      let updatedCart = state.cart
+        .map((curElem) => {
           if (curElem.id === action.payload) {
             return { ...curElem, quantity: curElem.quantity - 1 };
           }
