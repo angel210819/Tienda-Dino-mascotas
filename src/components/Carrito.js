@@ -6,23 +6,28 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Button from "@material-ui/core/Button";
+import DeleteIcon from "@mui/icons-material/Delete";
+import IconButton from "@mui/material/IconButton";
 
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
 
 function subtotal(items) {
-  return items.map((item) => item.precio * 7).reduce((sum, i) => sum + i, 0);
+  return items
+    .map((item) => item.precio * item.quantity)
+    .reduce((sum, i) => sum + i, 0);
 }
 
 export default function SpanningTable() {
-  const { cart , incrementProduct , decrementProduct } = useContext(CartContex);
+  const { cart, incrementProduct, decrementProduct, delFromCart, clearCart } =
+    useContext(CartContex);
 
   return (
     <TableContainer>
       <Table sx={{ minWidth: 700 }} aria-label="spanning table">
         <TableHead>
           <TableRow>
-            <TableCell></TableCell>
+            <TableCell colSpan={2}></TableCell>
             <TableCell>Producto</TableCell>
             <TableCell align="right">Cantidad</TableCell>
             <TableCell align="right">Precio Unitario</TableCell>
@@ -33,6 +38,16 @@ export default function SpanningTable() {
           {cart.map((item) => (
             <TableRow key={item.id}>
               <TableCell>
+                <IconButton
+                  size="small"
+                  onClick={() => {
+                    delFromCart(item.id);
+                  }}
+                >
+                  <DeleteIcon color="primary" />
+                </IconButton>
+              </TableCell>
+              <TableCell>
                 <img
                   src={item.img}
                   alt={item.nombre}
@@ -40,17 +55,42 @@ export default function SpanningTable() {
                   height="75"
                 ></img>
               </TableCell>
+
               <TableCell>{item.nombre}</TableCell>
               <TableCell align="right">
-                <Button onClick = {() => {incrementProduct(item.id)}}>+</Button>
+                <Button
+                  onClick={() => {
+                    incrementProduct(item.id);
+                  }}
+                >
+                  +
+                </Button>
                 {item.quantity}
-                <Button onClick = {() => {decrementProduct(item.id)}}>-</Button>
+                <Button
+                  onClick={() => {
+                    decrementProduct(item.id);
+                  }}
+                >
+                  -
+                </Button>
               </TableCell>
               <TableCell align="right">{item.precio}</TableCell>
               <TableCell align="right">{item.quantity * item.precio}</TableCell>
             </TableRow>
           ))}
           <TableRow>
+            <TableCell>
+              <Button
+                variant="contained"
+                disableElevation
+                color="primary"
+                onClick={() => {
+                  clearCart();
+                }}
+              >
+                Limpiar Carrito
+              </Button>
+            </TableCell>
             <TableCell colSpan={2}></TableCell>
             <TableCell align="right" colSpan={2}>
               Total

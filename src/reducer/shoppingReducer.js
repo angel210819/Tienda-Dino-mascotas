@@ -19,23 +19,6 @@ export default function shoppingReducer(state, action) {
             cart: [...state.cart, { ...action.payload, quantity: 1 }],
           };
     }
-    case TYPES.REMOVE_ONE_FROM_CART: {
-      let itemToDelete = state.cart.find((item) => item.id === action.payload);
-
-      return itemToDelete.quantity > 1
-        ? {
-            ...state,
-            cart: state.cart.map((item) =>
-              item.id === action.payload
-                ? { ...item, quantity: item.quantity - 1 }
-                : item
-            ),
-          }
-        : {
-            ...state,
-            cart: state.cart.filter((item) => item.id !== action.payload),
-          };
-    }
     case TYPES.REMOVE_ALL_FROM_CART: {
       return {
         ...state,
@@ -64,7 +47,7 @@ export default function shoppingReducer(state, action) {
       return { ...state, cart: updatedCart };
     }
     case TYPES.CLEAR_CART:
-      return [];
+      return { cart: [] };
     default:
       return state;
   }
