@@ -1,6 +1,6 @@
 import React from "react";
 import { CartContex } from "./Contex/CartContex";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
@@ -22,11 +22,12 @@ const ModalCarrito = ({ id, image, nombre, precio }) => {
     p: 4,
   };
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const { addToCart } = useContext(CartContex);
+
   return (
     <>
       <IconButton

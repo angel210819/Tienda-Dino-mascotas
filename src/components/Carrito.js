@@ -12,15 +12,15 @@ import IconButton from "@mui/material/IconButton";
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
 
-function subtotal(items) {
-  return items
-    .map((item) => item.precio * item.quantity)
-    .reduce((sum, i) => sum + i, 0);
-}
-
-export default function SpanningTable() {
+const Carrito = () => {
   const { cart, incrementProduct, decrementProduct, delFromCart, clearCart } =
     useContext(CartContex);
+
+  function subtotal(items) {
+    return items
+      .map((item) => item.precio * item.quantity)
+      .reduce((sum, i) => sum + i, 0);
+  }
 
   return (
     <TableContainer>
@@ -60,18 +60,18 @@ export default function SpanningTable() {
               <TableCell align="right">
                 <Button
                   onClick={() => {
-                    incrementProduct(item.id);
-                  }}
-                >
-                  +
-                </Button>
-                {item.quantity}
-                <Button
-                  onClick={() => {
                     decrementProduct(item.id);
                   }}
                 >
                   -
+                </Button>
+                {item.quantity}
+                <Button
+                  onClick={() => {
+                    incrementProduct(item.id);
+                  }}
+                >
+                  +
                 </Button>
               </TableCell>
               <TableCell align="right">{item.precio}</TableCell>
@@ -101,4 +101,6 @@ export default function SpanningTable() {
       </Table>
     </TableContainer>
   );
-}
+};
+
+export default Carrito;
