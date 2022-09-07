@@ -1,7 +1,7 @@
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { styled, alpha } from '@mui/material/styles';
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -42,7 +42,29 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
+
+
 const SearchBar = () => {
+
+  const [datos, setDatos] = useState([])
+  const url = 'http://localhost:5000/results';
+
+const obtenerDatos = async (url) => {
+
+  const res = await fetch(url)
+  const JSON = await res.json();
+  
+  setDatos(console.log(JSON))
+}
+
+useEffect(() => {
+  obtenerDatos(url)
+}, [])
+
+
+
+
   return (
     <div>
       <Search>
@@ -54,6 +76,7 @@ const SearchBar = () => {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
+          {datos}
     </div>
   )
 }

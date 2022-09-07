@@ -1,6 +1,6 @@
-import React from "react";
 import { Marcas } from "../enlaceDeMarca/Marcas";
 import { CardActionArea, Grid } from "@mui/material";
+import '../index.css'
 
 const MarcasDestacadas = () => {
   return (
@@ -15,10 +15,11 @@ const MarcasDestacadas = () => {
           return (
             <Grid
               hover
-              className="borde"
+              className={`${index} % 2 == 0 ? animacion : segundaAnimacion`}
               boxShadow={3}
               borderRadius={1}
               key={index}
+              
             >
               <CardActionArea>
                 <img

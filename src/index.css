@@ -8,10 +8,48 @@ body {
 }
 
 
-.borde:hover {
-  transform: translateY(10px);
-  transition: all 0.8 ease ;
-} 
+
+
+.segundaAnimacion:nth-child(2n+2) {
+  animation: hijo 3s infinite linear;
+}
+@media (min-width: 1200px) {
+  @keyframes hijo {
+    0%{
+      transform: translateY(0);
+    } 25% {
+      transform: translateY(-10%);
+    } 50% {
+      transform: translateY(0);
+    } 75% {
+      transform: translateY(10%);
+    } 100% {
+      transform: translateY(0);
+    }
+}
+}
+.animacion {
+  animation: desliz 3s infinite linear ;
+}
+
+@media (min-width: 1200px) {
+  .animacion {
+    margin-bottom: 30px;
+  }
+  @keyframes desliz {
+    0%{
+      transform: translateY(0);
+    } 25% {
+      transform: translateY(10%);
+    } 50% {
+      transform: translateY(0);
+    } 75% {
+      transform: translateY(-10%);
+    } 100% {
+      transform: translateY(0);
+    }
+}
+}
 
 .box {
   box-shadow: 0 0 1rem #00000025 inset;
