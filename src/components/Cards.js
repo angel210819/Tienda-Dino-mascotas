@@ -9,28 +9,28 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import IconButton from "@mui/material/IconButton";
 import Collapse from "@mui/material/Collapse";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import ModalCarrito from "./ModalCarrito";
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-  marginLeft: "auto",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
-function Cards({ image, nombre, descripcion, precio, peso }) {
+const Cards = ({ id, image, nombre, descripcion, precio, peso }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
+  const ExpandMore = styled((props) => {
+    const { expand, ...other } = props;
+    return <IconButton {...other} />;
+  })(({ theme, expand }) => ({
+    transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest,
+    }),
+  }));
+
   return (
-    <Card sx={{ maxWidth: 300 }} padding="200px">
+    <Card sx={{ maxWidth: 300 }} padding="200px" key={id}>
       <CardMedia height="150px" alt="Comida">
         <img src={image} alt={nombre} height="250px" width="300px"></img>
       </CardMedia>
@@ -53,13 +53,7 @@ function Cards({ image, nombre, descripcion, precio, peso }) {
       </CardContent>
 
       <CardActions disableSpacing>
-        <IconButton
-          color="primary"
-          size="medium"
-          aria-label="add to shopping cart"
-        >
-          <AddShoppingCartIcon />
-        </IconButton>
+        <ModalCarrito id={id} image={image} nombre={nombre} precio={precio} />
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -78,5 +72,5 @@ function Cards({ image, nombre, descripcion, precio, peso }) {
       </Collapse>
     </Card>
   );
-}
+};
 export default Cards;

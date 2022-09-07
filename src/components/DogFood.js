@@ -31,10 +31,10 @@ const DogFood = () => {
           {post.length > 0 ? (
             post.map((comida) => {
               return (
-                <Grid2>
+                <Grid2 key={comida.id}>
                   <div>
                     <Cards
-                      key={comida.id}
+                      id={comida.id}
                       image={comida.img}
                       nombre={comida.nombre}
                       peso={comida.peso}

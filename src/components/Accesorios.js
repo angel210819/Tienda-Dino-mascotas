@@ -31,10 +31,10 @@ const Prueba = () => {
           {post.length > 0 ? (
             post.map((comida) => {
               return (
-                <Grid2>
+                <Grid2 key={comida.id}>
                   <div>
                     <Cards
-                      key={comida.id}
+                      id={comida.id}
                       title={comida.marca}
                       image={comida.img}
                       contenido={comida.nombre}
