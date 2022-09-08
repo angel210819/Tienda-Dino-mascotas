@@ -5,25 +5,27 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import Logo from "./../images/dinoNegro.png";
+import Logo from "./../images/dinoBlanco.png";
 import Fono from "./../images/fono.png";
 import Carro from "./../images/carroCompras.png";
 import SearchBar from "./SearchBar";
 import Badge from "@mui/material/Badge";
 
+
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+
 
 export default function ButtonAppBar() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const { cart } = useContext(CartContex);
-
+ 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" color="primary">
         <Toolbar>
           <IconButton
             size="large"

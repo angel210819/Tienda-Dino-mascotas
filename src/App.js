@@ -1,8 +1,14 @@
 import React from "react";
 import Rutas from "./components/Rutas";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./components/ThemeConfig"
 
 function App() {
-  return <Rutas />;
+  return (
+    <ThemeProvider theme = {theme}>
+      <Rutas />;
+    </ThemeProvider>
+  );
 }
 
 export default App;
