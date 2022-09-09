@@ -40,7 +40,10 @@ const Products = (props) => {
                 <Grid2 key={comida.id}>
                   <div>
                     <Cards
+<<<<<<< HEAD
                       id={comida.id}
+=======
+>>>>>>> 24c364af35dc9170fc6b26c237640e63ba8df1c0
                       id={uuid.v4()}
                       image={comida.img}
                       nombre={comida.nombre}
