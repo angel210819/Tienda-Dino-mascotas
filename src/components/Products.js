@@ -3,19 +3,25 @@ import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
+import uuid from "react-native-uuid";
 
-const CatFood = () => {
+const Products = (props) => {
   const [post, setPost] = useState([]);
 
   const obtenerDatos = async () => {
-    const datos = await axios.get("http://localhost:5000/Felinos");
-    const comidas = await datos.data;
-    setPost(comidas);
+    try {
+      const datos = await axios.get(`http://localhost:5000/${props.direccion}`);
+      const comidas = await datos.data;
+      setPost(comidas);
+    } catch (error) {
+      setPost([]);
+    }
   };
 
   useEffect(() => {
     obtenerDatos();
-  }, []);
+    // eslint-disable-next-line
+  }, [props.direccion]);
 
   return (
     <div>
@@ -35,6 +41,7 @@ const CatFood = () => {
                   <div>
                     <Cards
                       id={comida.id}
+                      id={uuid.v4()}
                       image={comida.img}
                       nombre={comida.nombre}
                       peso={comida.peso}
@@ -54,4 +61,4 @@ const CatFood = () => {
   );
 };
 
-export default CatFood;
+export default Products;
