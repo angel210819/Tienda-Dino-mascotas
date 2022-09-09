@@ -4,18 +4,23 @@ import { Fragment } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
 
-const Prueba = () => {
+const Products = (props) => {
   const [post, setPost] = useState([]);
 
   const obtenerDatos = async () => {
-    const datos = await axios.get("http://localhost:5000/Accesorios");
-    const comidas = await datos.data;
-    setPost(comidas);
+    try {
+      const datos = await axios.get(`http://localhost:5000/${props.direccion}`);
+      const comidas = await datos.data;
+      setPost(comidas);
+    } catch (error) {
+      setPost([]);
+    }
   };
 
   useEffect(() => {
     obtenerDatos();
-  }, []);
+    // eslint-disable-next-line
+  }, [props.direccion]);
 
   return (
     <div>
@@ -35,9 +40,8 @@ const Prueba = () => {
                   <div>
                     <Cards
                       id={comida.id}
-                      title={comida.marca}
                       image={comida.img}
-                      contenido={comida.nombre}
+                      nombre={comida.nombre}
                       peso={comida.peso}
                       precio={comida.precio}
                       descripcion={comida.descripcion}
@@ -55,4 +59,4 @@ const Prueba = () => {
   );
 };
 
-export default Prueba;
+export default Products;

@@ -4,9 +4,9 @@
   user-select: none;
   overflow-x: hidden;
   overflow-y: hidden;
-  position: relative; 
-  width: 100%; 
-  user-select: none; 
+  position: relative;
+  width: 100%;
+  user-select: none;
 }
 
 .container-image {
@@ -23,14 +23,6 @@
   object-fit: contain;
   width: 100%;
   height: 100vh;
-}
-
-
-@media (max-width: 768px) {
- @media (max-width:1224px) {
-   .image-carousel {
-     object-fit: fill;
-   }
 }
 
 @media (max-width: 768px) {
