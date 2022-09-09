@@ -5,10 +5,10 @@ import Products from "./Products";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
+
 import Carrito from "./Carrito";
+
 import CartProvider from "../components/Contex/CartContex";
-import DogFood from "./DogFood";
-import CatFood from './'
 
 const Rutas = () => {
   return (
@@ -18,10 +18,7 @@ const Rutas = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/catFood" element={<CatFood />} />
-          <Route path="/dogFood" element={<DogFood />} />
-          <Route path="/accesorios" element={<Accesorios />} />
-            <Route path="/catFood" element={<Products direccion="Felinos" />} />
+          <Route path="/catFood" element={<Products direccion="Felinos" />} />
           <Route path="/dogFood" element={<Products direccion="Caninos" />} />
           <Route
             path="/accesorios"
