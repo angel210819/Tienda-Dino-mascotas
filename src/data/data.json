@@ -1,7 +1,6 @@
 {
   "Felinos":[
     {
-      "id": 1,
       "marca": "Fit Formula",
       "nombre": "Fit Formula Gato Adulto",
       "peso": "10kg",
@@ -11,7 +10,6 @@
     },
 
     {
-      "id": 2,
       "marca": "Royal Canin",
       "nombre": "Royal Canin Indoor",
       "peso": "1.5kg",
@@ -21,7 +19,6 @@
     },
 
     {
-      "id": 3,
       "marca": "Summit 10",
       "nombre": "Summit 10 Cat Light And Sterilised",
       "peso": "1.5kg",
@@ -31,7 +28,6 @@
     },
 
     {
-      "id": 4,
       "marca": "Vet Life",
       "nombre": "Vet Life Cat Renal",
       "peso": "2kg",
@@ -41,7 +37,6 @@
     },
 
     {
-      "id": 5,
       "marca": "Acana",
       "nombre": "Acana Cat Bountiful Catch",
       "peso": "1.8kg",
@@ -50,7 +45,6 @@
       "precio": 10200
     },
     {
-      "id": 6,
       "marca": "Whiskas",
       "nombre": "Whiskas Gatitos Carne y Leche",
       "peso": "10kg",
@@ -60,7 +54,6 @@
     },
 
     {
-      "id": 7,
       "marca": "Excellent",
       "nombre": "Alimento Excellent Urinary Arroz y Pollo para Gato",
       "peso": "7,5kg",
@@ -70,7 +63,6 @@
     },
 
     {
-      "id": 8,
       "marca": "Old Prince",
       "nombre": "Old Prince Gato Adulto Urinary Care",
       "peso": "7.5kg",
@@ -80,7 +72,6 @@
     },
 
     {
-      "id": 9,
       "marca": "Purina",
       "nombre": "Pro Plan Gato Adulto Live Clear",
       "peso": "1kg",
@@ -90,7 +81,6 @@
     },
 
     {
-      "id": 10,
       "marca": "Fawna",
       "nombre": "Alimento Fawna Gato Kitten",
       "peso": "3kg",
@@ -102,7 +92,6 @@
 
   "Caninos":[
     {
-      "id": 1,
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Small / Medium Breed Salmón",
       "peso": "12kg",
@@ -112,7 +101,6 @@
     },
 
     {
-      "id": 2,
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Large Lamb & Rice",
       "peso": "12kg + 2kg",
@@ -122,7 +110,6 @@
     },
 
     {
-      "id": 3,
       "marca": "Acana",
       "nombre": "Acana Dog Classic Praire Pultry",
       "peso": "2kg",
@@ -132,7 +119,6 @@
     },
 
     {
-      "id": 4,
       "marca": "Pro Plan",
       "nombre": "PRO PLAN Dietas Veterinarias Cardiaco",
       "peso": "7.5kg",
@@ -142,7 +128,6 @@
     },
 
     {
-      "id": 5,
       "marca": "Amity",
       "nombre": "Amity Low Grain Chicken Adulto",
       "peso": "4kg",
@@ -151,7 +136,6 @@
       "precio": 4399
     },
     {
-      "id": 6,
       "marca": "Maintenance Criadores",
       "nombre": "Maintenance Criadores Adulto",
       "peso": "22kg",
@@ -161,7 +145,6 @@
     },
 
     {
-      "id": 7,
       "marca": "Purina",
       "nombre": "Alimento Pro Plan Active Mind Perro Mediano y Grande",
       "peso": "3kg",
@@ -171,7 +154,6 @@
     },
 
     {
-      "id": 8,
       "marca": "Excellent",
       "nombre": "Alimento Excellent Pollo y Arroz Adulto ",
       "peso": "15kg",
@@ -181,7 +163,6 @@
     },
 
     {
-      "id": 9,
       "marca": "Eukanuba",
       "nombre": "Alimento Eukanuba para Perro Adulto Raza Mediana ",
       "peso": "15kg",
@@ -191,7 +172,6 @@
     },
 
     {
-      "id": 10,
       "marca": "Pedigree",
       "nombre": "Alimento Pedigree Perro Adulto Carne Cereales y Pollo",
       "peso": "21kg + 3kg",
