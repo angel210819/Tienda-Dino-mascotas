@@ -7,21 +7,26 @@ import Accesorios from "./Accesorios";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
-import ShoppingCart from "./Carrito/ShoppingCart";
+
+import Carrito from "./Carrito";
+
+import CartProvider from "../components/Contex/CartContex";
 
 const Rutas = () => {
   return (
     <Router>
-      <Header/>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/catFood" element={<CatFood />} />
-        <Route path="/dogFood" element={<DogFood />} />
-        <Route path="/accesorios" element={<Accesorios />} />
-      </Routes>
-      <Footer />
-      <ShoppingCart/>
+      <CartProvider>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/catFood" element={<CatFood />} />
+          <Route path="/dogFood" element={<DogFood />} />
+          <Route path="/accesorios" element={<Accesorios />} />
+          <Route path="/carrito" element={<Carrito />} />
+        </Routes>
+        <Footer />
+      </CartProvider>
     </Router>
   );
 };

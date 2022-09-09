@@ -48,7 +48,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const SearchBar = () => {
 
   const [datos, setDatos] = useState([])
-  const url = 'http://localhost:5000/results';
+  const url = 'http://localhost:5000';
 
 const obtenerDatos = async (url) => {
 
