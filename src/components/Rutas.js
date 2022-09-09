@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
-import DogFood from "./DogFood";
-import CatFood from "./CatFood";
-import Accesorios from "./Accesorios";
+import Products from "./Products";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -20,9 +18,12 @@ const Rutas = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/catFood" element={<CatFood />} />
-          <Route path="/dogFood" element={<DogFood />} />
-          <Route path="/accesorios" element={<Accesorios />} />
+          <Route path="/catFood" element={<Products direccion="Felinos" />} />
+          <Route path="/dogFood" element={<Products direccion="Caninos" />} />
+          <Route
+            path="/accesorios"
+            element={<Products direccion="Accesorios" />}
+          />
           <Route path="/carrito" element={<Carrito />} />
         </Routes>
         <Footer />
