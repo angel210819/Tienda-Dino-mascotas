@@ -23,6 +23,7 @@ const ModalCarrito = ({ id, image, nombre, precio }) => {
   };
 
   const [open, setOpen] = useState(false);
+  const [cantidad, setCantidad] = useState(1);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -48,23 +49,47 @@ const ModalCarrito = ({ id, image, nombre, precio }) => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Confirmar compra
+            Seleccione la cantidad que desea
           </Typography>
           <Button
-            variant="contained"
-            disableElevation
-            color="primary"
+            onClick={() => {
+              if (cantidad > 1) {
+                setCantidad(cantidad - 1);
+              }
+            }}
+          >
+            -
+          </Button>
+          {cantidad}
+          <Button
+            onClick={() => {
+              setCantidad(cantidad + 1);
+            }}
+          >
+            +
+          </Button>
+          <Button
+            style={{ color: "green" }}
             onClick={() => {
               addToCart({
                 id: id,
                 nombre: nombre,
                 img: image,
                 precio: precio,
+                quantity: cantidad,
               });
               handleClose();
             }}
           >
             Comprar!
+          </Button>
+          <Button
+            style={{ color: "red" }}
+            onClick={() => {
+              handleClose();
+            }}
+          >
+            Cancelar
           </Button>
         </Box>
       </Modal>
