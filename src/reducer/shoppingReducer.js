@@ -10,13 +10,13 @@ export default function shoppingReducer(state, action) {
             ...state,
             cart: state.cart.map((item) =>
               item.id === action.payload.id
-                ? { ...item, quantity: item.quantity + 1 }
+                ? { ...item, quantity: action.payload.quantity }
                 : item
             ),
           }
         : {
             ...state,
-            cart: [...state.cart, { ...action.payload, quantity: 1 }],
+            cart: [...state.cart, { ...action.payload }],
           };
     }
     case TYPES.REMOVE_ALL_FROM_CART: {

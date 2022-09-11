@@ -1,24 +1,27 @@
 {
   "Felinos":[
-    {
+    { 
+      "id":"0001",
       "marca": "Fit Formula",
       "nombre": "Fit Formula Gato Adulto",
       "peso": "10kg",
       "descripcion": "Alimento premium para gatos adultos de 1 a 7 años. Excelente digestibilidad que se refleja en un menor volumen de heces.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_fitformulagatoadulto10kg9665.jpg?188",
-      "precio": 22500
+      "precio": 7500
     },
 
     {
+      "id":"0002",
       "marca": "Royal Canin",
       "nombre": "Royal Canin Indoor",
       "peso": "1.5kg",
       "descripcion": "Ideal para gatos adultos que viven al interior del domicilio. Altamente digestible, reduce cantidad y olor de las heces.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_royalcaninindoor24973.jpg?188",
-      "precio": 13590
+      "precio": 4590
     },
 
     {
+      "id":"0003",
       "marca": "Summit 10",
       "nombre": "Summit 10 Cat Light And Sterilised",
       "peso": "1.5kg",
@@ -28,23 +31,26 @@
     },
 
     {
+      "id":"0004",
       "marca": "Vet Life",
       "nombre": "Vet Life Cat Renal",
       "peso": "2kg",
       "descripcion": "Formula Italiana, soporte de la función renal en casos de enfermedad renal crónica o aguda.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_vetlifecatrenal5132.jpg?188",
-      "precio": 21990
+      "precio": 5990
     },
 
     {
+      "id":"0005",
       "marca": "Acana",
       "nombre": "Acana Cat Bountiful Catch",
       "peso": "1.8kg",
       "descripcion": "Alimento para gatos adultos. producto de alta calidad con proteínas de salmón, bagre y arenque fresco o crudo, entero capturado en la naturaleza. Fabricado en EE. UU.",
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_acanacatbountifulcatch1-8kg6595.jpg?188",
-      "precio": 10200
+      "precio": 7200
     },
     {
+      "id":"0006",
       "marca": "Whiskas",
       "nombre": "Whiskas Gatitos Carne y Leche",
       "peso": "10kg",
@@ -54,6 +60,7 @@
     },
 
     {
+      "id":"0007",
       "marca": "Excellent",
       "nombre": "Alimento Excellent Urinary Arroz y Pollo para Gato",
       "peso": "7,5kg",
@@ -63,6 +70,7 @@
     },
 
     {
+      "id":"0008",
       "marca": "Old Prince",
       "nombre": "Old Prince Gato Adulto Urinary Care",
       "peso": "7.5kg",
@@ -72,6 +80,7 @@
     },
 
     {
+      "id":"0009",
       "marca": "Purina",
       "nombre": "Pro Plan Gato Adulto Live Clear",
       "peso": "1kg",
@@ -81,6 +90,7 @@
     },
 
     {
+      "id":"0010",
       "marca": "Fawna",
       "nombre": "Alimento Fawna Gato Kitten",
       "peso": "3kg",
@@ -92,6 +102,7 @@
 
   "Caninos":[
     {
+      "id":"0100",
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Small / Medium Breed Salmón",
       "peso": "12kg",
@@ -101,6 +112,7 @@
     },
 
     {
+      "id":"0200",
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Large Lamb & Rice",
       "peso": "12kg + 2kg",
@@ -110,6 +122,7 @@
     },
 
     {
+      "id":"0300",
       "marca": "Acana",
       "nombre": "Acana Dog Classic Praire Pultry",
       "peso": "2kg",
@@ -119,6 +132,7 @@
     },
 
     {
+      "id":"0400",
       "marca": "Pro Plan",
       "nombre": "PRO PLAN Dietas Veterinarias Cardiaco",
       "peso": "7.5kg",
@@ -128,6 +142,7 @@
     },
 
     {
+      "id":"0500",
       "marca": "Amity",
       "nombre": "Amity Low Grain Chicken Adulto",
       "peso": "4kg",
@@ -136,6 +151,7 @@
       "precio": 4399
     },
     {
+      "id":"0600",
       "marca": "Maintenance Criadores",
       "nombre": "Maintenance Criadores Adulto",
       "peso": "22kg",
@@ -145,6 +161,7 @@
     },
 
     {
+      "id":"0700",
       "marca": "Purina",
       "nombre": "Alimento Pro Plan Active Mind Perro Mediano y Grande",
       "peso": "3kg",
@@ -154,6 +171,7 @@
     },
 
     {
+      "id":"0800",
       "marca": "Excellent",
       "nombre": "Alimento Excellent Pollo y Arroz Adulto ",
       "peso": "15kg",
@@ -163,6 +181,7 @@
     },
 
     {
+      "id":"0900",
       "marca": "Eukanuba",
       "nombre": "Alimento Eukanuba para Perro Adulto Raza Mediana ",
       "peso": "15kg",
@@ -172,6 +191,7 @@
     },
 
     {
+      "id":"1000",
       "marca": "Pedigree",
       "nombre": "Alimento Pedigree Perro Adulto Carne Cereales y Pollo",
       "peso": "21kg + 3kg",

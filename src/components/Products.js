@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
-import uuid from "react-native-uuid";
 
 const Products = (props) => {
   const [post, setPost] = useState([]);
@@ -40,7 +39,7 @@ const Products = (props) => {
                 <Grid2 key={comida.id}>
                   <div>
                     <Cards
-                      id={uuid.v4()}
+                      id={comida.id}
                       image={comida.img}
                       nombre={comida.nombre}
                       peso={comida.peso}
