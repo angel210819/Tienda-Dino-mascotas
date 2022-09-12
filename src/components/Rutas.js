@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
+
 import Products from "./Products";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
@@ -16,7 +16,6 @@ const Rutas = () => {
     <Router>
       <CartProvider>
         <Header />
-        <Navbar />
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/catFood" element={<Products direccion="Felinos" />} />
