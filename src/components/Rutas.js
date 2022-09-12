@@ -9,6 +9,7 @@ import Header from "./Header";
 import Carrito from "./Carrito";
 
 import CartProvider from "../components/Contex/CartContex";
+import SearchBar from "./SearchBar";
 
 const Rutas = () => {
   return (
@@ -25,6 +26,7 @@ const Rutas = () => {
             element={<Products direccion="Accesorios" />}
           />
           <Route path="/carrito" element={<Carrito />} />
+          <Route path="/busqueda" element={<SearchBar />} />
         </Routes>
         <Footer />
       </CartProvider>
