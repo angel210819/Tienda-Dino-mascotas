@@ -10,7 +10,6 @@ import Fono from "./../images/fono.png";
 import Carro from "./../images/carroCompras.png";
 import Badge from "@mui/material/Badge";
 import SearchIcon from "@mui/icons-material/Search";
-
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
@@ -34,17 +33,25 @@ export default function ButtonAppBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Dino Mascotas.
           </Typography>
-          <Link
-            style={{ textDecoration: "none", color: "black", display: "flex" }}
-            to="./busqueda"
-          >
-            <SearchIcon />
-          </Link>
-          <Link color="inherit" to="./carrito">
-            <Badge badgeContent={cart.length} color="secondary">
-              <img src={Carro} alt="Carro" height="30" width="30" />
-            </Badge>
-          </Link>
+          <Button color="inherit">
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "black",
+                display: "flex",
+              }}
+              to="./busqueda"
+            >
+              <SearchIcon />
+            </Link>
+          </Button>
+          <Button color="inherit">
+            <Link color="inherit" to="./carrito">
+              <Badge badgeContent={cart.length} color="secondary">
+                <img src={Carro} alt="Carro" height="30" width="30" />
+              </Badge>
+            </Link>
+          </Button>
           <Button color="inherit">
             <img src={Fono} alt="Fono" height="30" width="30" />
           </Button>
