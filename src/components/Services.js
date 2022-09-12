@@ -10,7 +10,7 @@ export default function Services() {
     // Contenedor principal
     <>
       <Grid>
-        <Typography variant="h4" color="primary">
+        <Typography variant="h4" color="primary" ml={4}>
           Servicios Caninos
         </Typography>
       </Grid>
@@ -19,24 +19,26 @@ export default function Services() {
       <Divider variant="middle" />
       <br />
 
-      <Grid container padding=".5rem" justifyContent="space-around" ml={6}>
+      <Grid container padding=".5rem"  mx="auto"  width="80%" alignItems="center">
         {/* Primer Grid secundario contenedor con imagen */}
-        <Grid item xs={12} md={6} xl={6}>
+        <Grid item xs={12} md={6} xl={6} mt={2} textAlign="center">
           <img
             alt="paseo de perros"
             src={paseo}
             width="80%"
+            minWidth="50%"
             height="100%"
             style={{ cursor: "pointer" }}
           />
         </Grid>
 
         {/* Segundo Grid secundario contenedor con imagen */}
-        <Grid item xs={12} md={6} xl={6}>
+        <Grid item xs={12} md={6} xl={6} mt={2} textAlign="center">
           <img
             alt="adiestramiento"
             src={adiestramiento}
             width="80%"
+            minWidth="50%"
             height="100%"
             style={{ cursor: "pointer" }}
           />

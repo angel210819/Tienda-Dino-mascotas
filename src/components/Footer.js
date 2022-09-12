@@ -15,9 +15,11 @@ export default function Footer() {
     <>
       <Grid
         container
-        spacing={2}
+        width="100%"
         color="primary"
         justifyContent="center"
+        
+        
         padding="3rem"
       >
         <Grid item xs={10} md={4} lg={4}>
@@ -37,7 +39,7 @@ export default function Footer() {
           </List>
         </Grid>
 
-        <Grid item xs={10} md={4} lg={4}>
+        <Grid item xs={10} md={4} lg={4} >
           <Typography variant="h6" color="primary" ml={2}>
             Contactanos
           </Typography>
@@ -64,7 +66,7 @@ export default function Footer() {
           </List>
         </Grid>
 
-        <Grid item xs={10} md={4} lg={4}>
+        <Grid item xs={9} md={4} lg={4} >
           <Typography variant="h6" color="primary" mb={2}>
             Sigamos Conectados
           </Typography>
@@ -86,7 +88,7 @@ export default function Footer() {
         </Grid>
         <Grid item xs={12} md={12} lg={8}>
           {tarjetas.map((el) => (
-            <img key={el.id} alt={el.alt} src={el.src} width="40px" />
+           <Link key={el.id} href="/#"> <img  alt={el.alt} src={el.src} width="40px" /></Link>
           ))}
         </Grid>
       </Grid>
