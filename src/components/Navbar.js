@@ -52,7 +52,12 @@ const Navbar = () => {
     <Box>
       <Box sx={{ display: { xs: "block", md: "none" } }}>
         {/*Icono del boton hamburguesa */}
-        <IconButton size="large" onClick={handleOpenNavMenu} color="inherit">
+        <IconButton
+          size="large"
+          onClick={handleOpenNavMenu}
+          color="inherit"
+          sx={{ marginRight: "35px" }}
+        >
           <MenuIcon />
         </IconButton>
         <Menu
