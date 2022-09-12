@@ -1,32 +1,16 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import ButtonBase from "@mui/material/ButtonBase";
 import Divider from "@mui/material/Divider";
-import { Link } from "@mui/material";
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#AFDBF5",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
-const Img = styled("img")({
-  margin: "auto",
-  display: "block",
-  maxWidth: "100%",
-  maxHeight: "100%",
-});
+import paseo from "../images/serviciosCaninos/paseo.jpg";
+import adiestramiento from "../images/serviciosCaninos/adiestramiento.jpg";
 
 export default function Services() {
   return (
     // Contenedor principal
-    <Box sx={{ width: "100%" }}>
-      <Grid item xs>
-        <Typography gutterBottom variant="h4" component="div" color="#6495ED">
+    <>
+      <Grid>
+        <Typography variant="h4" color="primary">
           Servicios Caninos
         </Typography>
       </Grid>
@@ -35,68 +19,29 @@ export default function Services() {
       <Divider variant="middle" />
       <br />
 
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container padding=".5rem" justifyContent="space-around" ml={6}>
         {/* Primer Grid secundario contenedor con imagen */}
-        <Grid item xs={6}>
-          <Item>
-            <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs>
-                <Typography
-                  gutterBottom
-                  variant="subtitle1"
-                  color="#6495ED"
-                  component="div"
-                  fontSize={25}
-                >
-                  Adiestramiento Canino
-                </Typography>
-
-                <Grid item>
-                  <ButtonBase sy={{ width: 128, height: 200 }}>
-                    <Img
-                      alt="adiestramiento"
-                      src="../adiestramiento-perros.jpg"
-                      width="92.5%"
-                    />
-                  </ButtonBase>
-                  <Link underline="hover">Reservaciones</Link>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Item>
+        <Grid item xs={12} md={6} xl={6}>
+          <img
+            alt="paseo de perros"
+            src={paseo}
+            width="80%"
+            height="100%"
+            style={{ cursor: "pointer" }}
+          />
         </Grid>
 
         {/* Segundo Grid secundario contenedor con imagen */}
-        <Grid item xs={6}>
-          <Item>
-            <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs>
-                <Typography
-                  gutterBottom
-                  variant="subtitle1"
-                  color="#6495ED"
-                  component="div"
-                  fontSize={25}
-                >
-                  Paseos Caninos
-                </Typography>
-
-                <Grid item>
-                  <ButtonBase sy={{ width: 128, height: 200 }}>
-                    <Img
-                      alt="adiestramiento"
-                      src="../perros_paseo.jpg"
-                      width="90%"
-                    />
-                  </ButtonBase>
-
-                  <Link underline="hover">Reservaciones</Link>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Item>
+        <Grid item xs={12} md={6} xl={6}>
+          <img
+            alt="adiestramiento"
+            src={adiestramiento}
+            width="80%"
+            height="100%"
+            style={{ cursor: "pointer" }}
+          />
         </Grid>
       </Grid>
-    </Box>
+    </>
   );
 }

@@ -20,7 +20,7 @@ export default function Footer() {
         justifyContent="center"
         padding="3rem"
       >
-        <Grid item xs={12} md={4} lg={4}>
+        <Grid item xs={10} md={4} lg={4}>
           <List>
             <ListItem>
               <Link href="/#">Términos y condiciones</Link>
@@ -37,7 +37,7 @@ export default function Footer() {
           </List>
         </Grid>
 
-        <Grid item xs={12} md={4} lg={4}>
+        <Grid item xs={10} md={4} lg={4}>
           <Typography variant="h6" color="primary" ml={2}>
             Contactanos
           </Typography>
@@ -64,13 +64,16 @@ export default function Footer() {
           </List>
         </Grid>
 
-        <Grid item xs={12} md={4} lg={4}>
+        <Grid item xs={10} md={4} lg={4}>
           <Typography variant="h6" color="primary" mb={2}>
             Sigamos Conectados
           </Typography>
-          <Link href="/#" fontSize={4}>
+          <Link href="https://www.instagram.com/" target="_blank" fontSize={10} mr={1}>
             <InstagramIcon color="primary" />
-            <FacebookIcon color="primary" />
+            
+          </Link>
+          <Link href="https://es-la.facebook.com/" target="_blank" fontSize={10}>
+             <FacebookIcon color="primary" />
           </Link>
         </Grid>
       </Grid>
