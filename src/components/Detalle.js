@@ -41,13 +41,15 @@ const Detalle = () => {
     >
       {imagenesDetalles.map((item, id) => {
         return (
-          <Box
+          <Grid 
             key={id}
-            paddingLeft="10px"
-            padding="15px"
+            mx="auto"
             display="flex"
             alignItems="center"
-            container
+            item
+            xs={9}
+            md={10}
+            xl={3}
           >
             <img height="50px" src={item.image} alt="detalles de politica" />
             <Box paddingLeft={5}
@@ -55,7 +57,7 @@ const Detalle = () => {
               <Typography variant="h5">{item.title}</Typography>
               <Typography variant="p"> {item.text} </Typography>
             </Box>
-          </Box>
+          </Grid>
         );
       })}
     </Grid>

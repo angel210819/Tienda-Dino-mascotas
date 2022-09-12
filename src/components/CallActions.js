@@ -15,7 +15,7 @@ import imgVet from "../images/Veterinary.jpg";
 
 export default function CallActions() {
   return (
-    <Grid container justifyContent="space-around" spacing={2} mr={4}>
+    <Grid container justifyContent="space-around" spacing={2} mx="auto" width="95%" >
       <Grid item xs={10} md={4} xl={4}>
         <Card>
           <CardMedia

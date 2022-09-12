@@ -4,7 +4,7 @@ import { CardActionArea, Grid } from "@mui/material";
 
 const MarcasDestacadas = () => {
   return (
-    <Grid spacing={2} padding="1rem">
+    <Grid spacing={2} padding="1rem" width="98%" mx="auto">
       <Grid
         container
         columns={{ xs: 2, sm: 3, md: 4 }}
