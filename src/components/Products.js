@@ -29,8 +29,8 @@ const Products = (props) => {
         <br />
         <Grid2
           container
-          spacing={{ xs: 10, md: 4 }}
-          columns={{ xs: 5, sm: 1, md: 20 }}
+          spacing={{ xs: 2, md: 4 }}
+          columns={{ xs: 2, sm: 1, md: 5 }}
           justifyContent="center"
         >
           {post.length > 0 ? (
