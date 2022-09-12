@@ -19,55 +19,59 @@ export default function ButtonAppBar() {
   const { cart } = useContext(CartContex);
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <Link
-              style={{
-                textDecoration: "none",
-                color: "black",
-                display: "flex",
-              }}
-              to="./"
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="fixed">
+          <Toolbar>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
             >
-              <img src={Logo} alt="Dino" height="45" width="45" />
-            </Link>
-          </IconButton>
-          <Typography sx={{ flexGrow: 1 }}>Dino Mascotas</Typography>
-          <Navbar />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Button color="inherit">
               <Link
                 style={{
                   textDecoration: "none",
                   color: "black",
                   display: "flex",
                 }}
-                to="./busqueda"
+                to="./"
               >
-                <SearchIcon />
+                <img src={Logo} alt="Dino" height="45" width="45" />
               </Link>
-            </Button>
-            <Button color="inherit">
-              <Link color="inherit" to="./carrito">
-                <Badge badgeContent={cart.length} color="secondary">
-                  <img src={Carro} alt="Carro" height="30" width="30" />
-                </Badge>
-              </Link>
-            </Button>
-            <Button color="inherit">
-              <img src={Fono} alt="Fono" height="30" width="30" />
-            </Button>
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </Box>
+            </IconButton>
+            <Typography sx={{ flexGrow: 1 }}>Dino Mascotas</Typography>
+            <Navbar />
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              <Button color="inherit">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    display: "flex",
+                  }}
+                  to="./busqueda"
+                >
+                  <SearchIcon />
+                </Link>
+              </Button>
+              <Button color="inherit">
+                <Link color="inherit" to="./carrito">
+                  <Badge badgeContent={cart.length} color="secondary">
+                    <img src={Carro} alt="Carro" height="30" width="30" />
+                  </Badge>
+                </Link>
+              </Button>
+              <Button color="inherit">
+                <img src={Fono} alt="Fono" height="30" width="30" />
+              </Button>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </Box>
+      <br />
+      <br />
+    </>
   );
 }
