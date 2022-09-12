@@ -46,7 +46,8 @@ const SearchBar = () => {
   }, []);
 
   return (
-    <div>
+    <>
+      <br></br>
       <Search>
         <SearchIconWrapper>
           <SearchIcon />
@@ -85,7 +86,7 @@ const SearchBar = () => {
           })}
         </Grid2>
       </Fragment>
-    </div>
+    </>
   );
 };
 
