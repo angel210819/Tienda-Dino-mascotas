@@ -1,7 +1,7 @@
 {
-  "Felinos":[
-    { 
-      "id":"0001",
+  "Felinos": [
+    {
+      "id": "0001",
       "marca": "Fit Formula",
       "nombre": "Fit Formula Gato Adulto",
       "peso": "10kg",
@@ -11,7 +11,7 @@
     },
 
     {
-      "id":"0002",
+      "id": "0002",
       "marca": "Royal Canin",
       "nombre": "Royal Canin Indoor",
       "peso": "1.5kg",
@@ -21,7 +21,7 @@
     },
 
     {
-      "id":"0003",
+      "id": "0003",
       "marca": "Summit 10",
       "nombre": "Summit 10 Cat Light And Sterilised",
       "peso": "1.5kg",
@@ -31,7 +31,7 @@
     },
 
     {
-      "id":"0004",
+      "id": "0004",
       "marca": "Vet Life",
       "nombre": "Vet Life Cat Renal",
       "peso": "2kg",
@@ -41,7 +41,7 @@
     },
 
     {
-      "id":"0005",
+      "id": "0005",
       "marca": "Acana",
       "nombre": "Acana Cat Bountiful Catch",
       "peso": "1.8kg",
@@ -50,7 +50,7 @@
       "precio": 7200
     },
     {
-      "id":"0006",
+      "id": "0006",
       "marca": "Whiskas",
       "nombre": "Whiskas Gatitos Carne y Leche",
       "peso": "10kg",
@@ -60,8 +60,8 @@
     },
 
     {
-      "id":"0007",
-      "marca": "Excellent",
+      "id": "0007",
+      "marca": "Purina",
       "nombre": "Alimento Excellent Urinary Arroz y Pollo para Gato",
       "peso": "7,5kg",
       "descripcion": "Posee todas las proteínas, vitaminas y minerales para cubrir los requerimientos de gatos adultos. Calidad Standar.",
@@ -70,7 +70,7 @@
     },
 
     {
-      "id":"0008",
+      "id": "0008",
       "marca": "Old Prince",
       "nombre": "Old Prince Gato Adulto Urinary Care",
       "peso": "7.5kg",
@@ -80,7 +80,7 @@
     },
 
     {
-      "id":"0009",
+      "id": "0009",
       "marca": "Purina",
       "nombre": "Pro Plan Gato Adulto Live Clear",
       "peso": "1kg",
@@ -90,7 +90,7 @@
     },
 
     {
-      "id":"0010",
+      "id": "0010",
       "marca": "Fawna",
       "nombre": "Alimento Fawna Gato Kitten",
       "peso": "3kg",
@@ -100,9 +100,9 @@
     }
   ],
 
-  "Caninos":[
+  "Caninos": [
     {
-      "id":"0100",
+      "id": "0100",
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Small / Medium Breed Salmón",
       "peso": "12kg",
@@ -112,7 +112,7 @@
     },
 
     {
-      "id":"0200",
+      "id": "0200",
       "marca": "Brit Care",
       "nombre": "Brit Care Adult Large Lamb & Rice",
       "peso": "12kg + 2kg",
@@ -122,7 +122,7 @@
     },
 
     {
-      "id":"0300",
+      "id": "0300",
       "marca": "Acana",
       "nombre": "Acana Dog Classic Praire Pultry",
       "peso": "2kg",
@@ -132,7 +132,7 @@
     },
 
     {
-      "id":"0400",
+      "id": "0400",
       "marca": "Pro Plan",
       "nombre": "PRO PLAN Dietas Veterinarias Cardiaco",
       "peso": "7.5kg",
@@ -142,7 +142,7 @@
     },
 
     {
-      "id":"0500",
+      "id": "0500",
       "marca": "Amity",
       "nombre": "Amity Low Grain Chicken Adulto",
       "peso": "4kg",
@@ -151,7 +151,7 @@
       "precio": 4399
     },
     {
-      "id":"0600",
+      "id": "0600",
       "marca": "Maintenance Criadores",
       "nombre": "Maintenance Criadores Adulto",
       "peso": "22kg",
@@ -161,7 +161,7 @@
     },
 
     {
-      "id":"0700",
+      "id": "0700",
       "marca": "Purina",
       "nombre": "Alimento Pro Plan Active Mind Perro Mediano y Grande",
       "peso": "3kg",
@@ -171,8 +171,8 @@
     },
 
     {
-      "id":"0800",
-      "marca": "Excellent",
+      "id": "0800",
+      "marca": "Purina",
       "nombre": "Alimento Excellent Pollo y Arroz Adulto ",
       "peso": "15kg",
       "descripcion": "PURINA® Excellent® ADULT 7+ CHICKEN & RICE brinda una nutrición especializada para los perros que necesitan mejorar su calidad y expectativa de vida. ",
@@ -181,7 +181,7 @@
     },
 
     {
-      "id":"0900",
+      "id": "0900",
       "marca": "Eukanuba",
       "nombre": "Alimento Eukanuba para Perro Adulto Raza Mediana ",
       "peso": "15kg",
@@ -191,7 +191,7 @@
     },
 
     {
-      "id":"1000",
+      "id": "1000",
       "marca": "Pedigree",
       "nombre": "Alimento Pedigree Perro Adulto Carne Cereales y Pollo",
       "peso": "21kg + 3kg",
@@ -199,5 +199,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/180957-1000-1000/7797453000710.jpg?v=637611741171370000",
       "precio": 7800
     }
-  ]
+  ],
+  "Accesorios": []
 }

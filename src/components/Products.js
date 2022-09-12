@@ -13,7 +13,7 @@ const Products = (props) => {
       const comidas = await datos.data;
       setPost(comidas);
     } catch (error) {
-      setPost([]);
+      console.log("servidor caido");
     }
   };
 
