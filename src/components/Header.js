@@ -35,7 +35,7 @@ export default function ButtonAppBar() {
             Dino Mascotas.
           </Typography>
           <Link
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "black", display: "flex" }}
             to="./busqueda"
           >
             <SearchIcon />
