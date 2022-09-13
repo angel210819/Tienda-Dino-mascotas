@@ -23,7 +23,7 @@ const Carrito = () => {
   }
 
   return (
-    <TableContainer>
+    <TableContainer style={{overflowX:"auto"}}>
       <Table sx={{ minWidth: 700 }} aria-label="spanning table">
         <TableHead>
           <TableRow>

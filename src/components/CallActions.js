@@ -6,9 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
 import { Grid } from "@mui/material";
-
 import imgCats from "../images/Cats.jpg";
 import imgDogs from "../images/Dogs.jpg";
 import imgVet from "../images/Veterinary.jpg";
@@ -21,7 +19,6 @@ export default function CallActions() {
           <CardMedia
             component="img"
             alt="Gatos"
-            maxWidth="400px"
             height="140"
             image={imgCats}
           />
@@ -47,7 +44,6 @@ export default function CallActions() {
             component="img"
             alt="green iguana"
             height="140"
-            maxWidth="400px"
             image={imgDogs}
             xs={6}
           />
@@ -74,7 +70,6 @@ export default function CallActions() {
             alt="green iguana"
             height="140"
             image={imgVet}
-            maxWidth="200px"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
