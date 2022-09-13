@@ -3,8 +3,9 @@ import MarcasDestacadas from "./MarcasDestacadas";
 import Detalle from "./Detalle";
 import CallActions from "./CallActions";
 import Services from "./Services";
-import CarInst from "./CarInst";
+import CarouselInstagram from "./carruselInstagram/CarouselInstagram";
 import Slider from "./carousel/Slider";
+import Box from '@mui/material/Box';
 
 const Inicio = () => {
   return (
@@ -13,8 +14,10 @@ const Inicio = () => {
       <MarcasDestacadas />
       <CallActions />
       <Detalle />
-      <CarInst />
+      <Box sx={{ display: { md: "flex" }, justifyContent: "space-around"}}>
+      <CarouselInstagram/>
       <Services />
+      </Box>
     </div>
   );
 };
