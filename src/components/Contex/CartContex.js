@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 
-import shoppingReducer from "../../reducer/shoppingReducer";
-import { TYPES } from "../../actions/ShoppingAction";
+import shoppingReducer from "../reducer/shoppingReducer";
+import { TYPES } from "../actions/ShoppingAction";
 
 export const CartContex = createContext([]);
 
