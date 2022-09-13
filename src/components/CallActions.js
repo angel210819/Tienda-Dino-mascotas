@@ -13,8 +13,11 @@ import imgCats from "../images/Cats.jpg";
 import imgDogs from "../images/Dogs.jpg";
 import imgVet from "../images/Veterinary.jpg";
 
+
+
 export default function CallActions() {
   return (
+
     <Grid container justifyContent="space-around" spacing={2} mr={4}>
       <Grid item xs={10} md={4} xl={4}>
         <Card>
@@ -37,6 +40,7 @@ export default function CallActions() {
             <Button variant="contained" color="secondary" size="small">
               Accede Aqui
             </Button>
+           
           </CardActions>
         </Card>
       </Grid>
@@ -91,6 +95,6 @@ export default function CallActions() {
           </CardActions>
         </Card>
       </Grid>
-    </Grid>
+    </Grid>   
   );
 }

@@ -5,14 +5,16 @@ import Products from "./Products";
 import Inicio from "./Inicio";
 import Footer from "./Footer";
 import Header from "./Header";
-
 import Carrito from "./Carrito";
-
 import CartProvider from "../components/Contex/CartContex";
 import SearchBar from "./barraBusqueda/SearchBar";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../components/ThemeGlobal'
 
 const Rutas = () => {
   return (
+    <ThemeProvider theme={theme}>
+      
     <Router>
       <CartProvider>
         <Header />
@@ -31,6 +33,7 @@ const Rutas = () => {
         <Footer />
       </CartProvider>
     </Router>
+    </ThemeProvider>
   );
 };
 

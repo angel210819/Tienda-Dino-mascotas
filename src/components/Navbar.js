@@ -13,6 +13,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
+
 /*Arreglo de objetos con el Texto de los enlaces y las direcciones de las paginas a las que los mismo dirigen */
 const pages = [
   {
@@ -20,11 +21,11 @@ const pages = [
     direction: "/",
   },
   {
-    text: "Alimentos Caninos",
+    text: "Caninos",
     direction: "/dogFood",
   },
   {
-    text: "Alimentos Felinos",
+    text: "Felinos",
     direction: "/catFood",
   },
   {
