@@ -14,55 +14,42 @@ import ts13 from "../images/carrusel/13.jpg";
 
 export const Imagenes = [
   {
-    id: 1,
-    img: ts1,
+    imgPath: ts1,
   },
   {
-    id: 2,
-    img: ts2,
+    imgPath: ts2,
   },
   {
-    id: 3,
-    img: ts3,
+    imgPath: ts3,
   },
   {
-    id: 4,
-    img: ts4,
+    imgPath: ts4,
   },
   {
-    id: 5,
-    img: ts5,
+    imgPath: ts5,
   },
   {
-    id: 6,
-    img: ts6,
+    imgPath: ts6,
   },
   {
-    id: 7,
-    img: ts7,
+    imgPath: ts7,
   },
   {
-    id: 8,
-    img: ts8,
+    imgPath: ts8,
   },
   {
-    id: 9,
-    img: ts9,
+    imgPath: ts9,
   },
   {
-    id: 10,
-    img: ts10,
+    imgPath: ts10,
   },
   {
-    id: 11,
-    img: ts11,
+    imgPath: ts11,
   },
   {
-    id: 12,
-    img: ts12,
+    imgPath: ts12,
   },
   {
-    id: 13,
-    img: ts13,
+    imgPath: ts13,
   },
 ];
