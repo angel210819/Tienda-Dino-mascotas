@@ -31,7 +31,7 @@ const Carrito = () => {
   useEffect(() => {
     updateState();
     // eslint-disable-next-line
-  }, [cart]);
+  }, []);
 
   return (
     <TableContainer style={{ overflowX: "auto" }}>
