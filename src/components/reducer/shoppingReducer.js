@@ -27,29 +27,41 @@ export function shoppingReducer(state, action) {
         });
       };
 
-      return (
-        itemInCart
-          ? {
-              //aca va ir el metodo PUT
-              ...state,
-              cart: state.cart.map((item) =>
-                item.id === action.payload.id
-                  ? { ...item, quantity: action.payload.quantity }
-                  : item
-              ),
-            }
-          : agregarProducto(
-              action.payload.id,
-              action.payload.nombre,
-              action.payload.img,
-              action.payload.precio,
-              action.payload.quantity
-            ),
-        {
-          ...state,
-          cart: [...state.cart, { ...action.payload }],
-        }
-      );
+      const modificarCantidad = async (id, nombre, img, precio, quantity) => {
+        await axios.put(`http://localhost:5000/carrito/${id}`, {
+          id: id,
+          nombre: nombre,
+          img: img,
+          precio: precio,
+          quantity: quantity,
+        });
+      };
+
+      return itemInCart
+        ? //aca va ir el metodo PUT
+
+          (modificarCantidad(
+            action.payload.id,
+            action.payload.nombre,
+            action.payload.img,
+            action.payload.precio,
+            action.payload.quantity
+          ),
+          {
+            ...state,
+            cart: [...state.cart],
+          })
+        : (agregarProducto(
+            action.payload.id,
+            action.payload.nombre,
+            action.payload.img,
+            action.payload.precio,
+            action.payload.quantity
+          ),
+          {
+            ...state,
+            cart: [...state.cart, { ...action.payload }],
+          });
     }
     case TYPES.REMOVE_ALL_FROM_CART: {
       return {
