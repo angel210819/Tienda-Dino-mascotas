@@ -1,13 +1,9 @@
 import { createContext, useReducer } from "react";
 
-import shoppingReducer from "../reducer/shoppingReducer";
+import { shoppingReducer, initialState } from "../reducer/shoppingReducer";
 import { TYPES } from "../actions/ShoppingAction";
 
 export const CartContex = createContext([]);
-
-const initialState = {
-  cart: [],
-};
 
 const CartProvider = (props) => {
   const [state, dispatch] = useReducer(shoppingReducer, initialState);
