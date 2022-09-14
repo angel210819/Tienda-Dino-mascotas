@@ -9,7 +9,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_fitformulagatoadulto10kg9665.jpg?188",
       "precio": 7500
     },
-
     {
       "id": "0002",
       "marca": "Royal Canin",
@@ -19,7 +18,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_royalcaninindoor24973.jpg?188",
       "precio": 4590
     },
-
     {
       "id": "0003",
       "marca": "Summit 10",
@@ -29,7 +27,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_summit10catlightandsterilised2090.jpg?188",
       "precio": 8625
     },
-
     {
       "id": "0004",
       "marca": "Vet Life",
@@ -39,7 +36,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_vetlifecatrenal5132.jpg?188",
       "precio": 5990
     },
-
     {
       "id": "0005",
       "marca": "Acana",
@@ -58,7 +54,6 @@
       "img": "https://www.timberline.com.ar/5320-large_default/whiskas-adulto-pescado-x-10-kg.jpg",
       "precio": 5277
     },
-
     {
       "id": "0007",
       "marca": "Purina",
@@ -68,7 +63,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/167605-1000-1000/150029.jpg?v=637021777692670000",
       "precio": 8540
     },
-
     {
       "id": "0008",
       "marca": "Old Prince",
@@ -78,7 +72,6 @@
       "img": "https://www.timberline.com.ar/5069-large_default/old-prince-gato-adulto-urinary-care-x-75-kg.jpg",
       "precio": 5700
     },
-
     {
       "id": "0009",
       "marca": "Purina",
@@ -88,7 +81,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/179738-1000-1000/7613287119605_1.png?v=637570861153000000",
       "precio": 2640
     },
-
     {
       "id": "0010",
       "marca": "Fawna",
@@ -99,7 +91,6 @@
       "precio": 4620
     }
   ],
-
   "Caninos": [
     {
       "id": "0100",
@@ -110,7 +101,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_brit-care-adult-small-medium-breed-salmo-n8759.jpg?188",
       "precio": 5999
     },
-
     {
       "id": "0200",
       "marca": "Brit Care",
@@ -120,7 +110,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/M_britcareadultlargelamb-rice12kg2kggratis2300.jpg?188",
       "precio": 5880
     },
-
     {
       "id": "0300",
       "marca": "Acana",
@@ -130,7 +119,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_acana-dog-classic-praire-pultry6512.jpg?188",
       "precio": 3599
     },
-
     {
       "id": "0400",
       "marca": "Pro Plan",
@@ -140,7 +128,6 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_alimentosecoparaperroproplan-dietasveterinariascardiaco1459.jpg?188",
       "precio": 3999
     },
-
     {
       "id": "0500",
       "marca": "Amity",
@@ -159,7 +146,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/158003-1000-1000/150002.png?v=635894318957130000",
       "precio": 4140
     },
-
     {
       "id": "0700",
       "marca": "Purina",
@@ -169,7 +155,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/179848-1000-1000/7613287032911_1.png?v=637570861499770000",
       "precio": 3900
     },
-
     {
       "id": "0800",
       "marca": "Purina",
@@ -179,7 +164,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/179348-1000-1000/7613035337763-1.jpg?v=637570858008200000",
       "precio": 8800
     },
-
     {
       "id": "0900",
       "marca": "Eukanuba",
@@ -189,7 +173,6 @@
       "img": "https://puppis.vteximg.com.br/arquivos/ids/171388-1000-1000/138004.jpg?v=637279089930400000",
       "precio": 10455
     },
-
     {
       "id": "1000",
       "marca": "Pedigree",
@@ -200,5 +183,6 @@
       "precio": 7800
     }
   ],
-  "Accesorios": []
+  "Accesorios": [],
+  "Carrito": []
 }
