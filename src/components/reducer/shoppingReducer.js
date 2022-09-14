@@ -5,6 +5,26 @@ export const initialState = {
   cart: [],
 };
 
+const agregarProducto = async (id, nombre, img, precio, quantity) => {
+  await axios.post("http://localhost:5000/carrito", {
+    id: id,
+    nombre: nombre,
+    img: img,
+    precio: precio,
+    quantity: quantity,
+  });
+};
+
+const modificarCantidad = async (id, nombre, img, precio, quantity) => {
+  await axios.put(`http://localhost:5000/carrito/${id}`, {
+    id: id,
+    nombre: nombre,
+    img: img,
+    precio: precio,
+    quantity: quantity,
+  });
+};
+
 export function shoppingReducer(state, action) {
   switch (action.type) {
     case TYPES.READ_STATE: {
@@ -16,26 +36,6 @@ export function shoppingReducer(state, action) {
 
     case TYPES.ADD_TO_CART: {
       let itemInCart = state.cart.find((item) => item.id === action.payload.id);
-
-      const agregarProducto = async (id, nombre, img, precio, quantity) => {
-        await axios.post("http://localhost:5000/Carrito", {
-          id: id,
-          nombre: nombre,
-          img: img,
-          precio: precio,
-          quantity: quantity,
-        });
-      };
-
-      const modificarCantidad = async (id, nombre, img, precio, quantity) => {
-        await axios.put(`http://localhost:5000/carrito/${id}`, {
-          id: id,
-          nombre: nombre,
-          img: img,
-          precio: precio,
-          quantity: quantity,
-        });
-      };
 
       return itemInCart
         ? //aca va ir el metodo PUT
@@ -72,7 +72,16 @@ export function shoppingReducer(state, action) {
     case TYPES.INCREMENT: {
       let updatedCart = state.cart.map((curElem) => {
         if (curElem.id === action.payload) {
-          return { ...curElem, quantity: curElem.quantity + 1 };
+          return (
+            modificarCantidad(
+              curElem.id,
+              curElem.nombre,
+              curElem.img,
+              curElem.precio,
+              curElem.quantity + 1
+            ),
+            { ...curElem, quantity: curElem.quantity + 1 }
+          );
         }
         return curElem;
       });
@@ -83,7 +92,16 @@ export function shoppingReducer(state, action) {
       let updatedCart = state.cart
         .map((curElem) => {
           if (curElem.id === action.payload) {
-            return { ...curElem, quantity: curElem.quantity - 1 };
+            return (
+              modificarCantidad(
+                curElem.id,
+                curElem.nombre,
+                curElem.img,
+                curElem.precio,
+                curElem.quantity - 1
+              ),
+              { ...curElem, quantity: curElem.quantity - 1 }
+            );
           }
           return curElem;
         })
