@@ -30,7 +30,7 @@ const Cards = ({ id, image, nombre, descripcion, precio, peso }) => {
   }));
 
   return (
-    <Card sx={{ maxWidth: 300 }} padding="200px" key={id}>
+    <Card sx={{ maxWidth: "300px"}} key={id}>
       <CardMedia height="150px" alt="Comida">
         <img src={image} alt={nombre} height="250px" width="300px"></img>
       </CardMedia>
