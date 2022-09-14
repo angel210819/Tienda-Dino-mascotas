@@ -8,11 +8,6 @@ export default function Services() {
   return (
     // Contenedor principal
     <>
-   
-
-      {/* <hr/> */}
-
-
      <Box>
         {/* Primer Grid secundario contenedor con imagen */}
         <Grid item xs={12} md={6} xl={6} mt={2} textAlign="center">
