@@ -2,11 +2,23 @@ import { createContext, useReducer } from "react";
 
 import { shoppingReducer, initialState } from "../reducer/shoppingReducer";
 import { TYPES } from "../actions/ShoppingAction";
+import axios from "axios";
 
 export const CartContex = createContext([]);
 
 const CartProvider = (props) => {
   const [state, dispatch] = useReducer(shoppingReducer, initialState);
+
+  const updateState = async () => {
+    const carritoUrl = "http://localhost:5000/Carrito";
+    const resCarrito = await axios.get(carritoUrl);
+    const carritoListItems = await resCarrito.data;
+
+    dispatch({
+      type: TYPES.READ_STATE,
+      payload: carritoListItems,
+    });
+  };
 
   const addToCart = (producto) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: producto });
@@ -30,6 +42,7 @@ const CartProvider = (props) => {
     <CartContex.Provider
       value={{
         cart: state.cart,
+        updateState,
         addToCart,
         delFromCart,
         clearCart,

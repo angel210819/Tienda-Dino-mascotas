@@ -10,11 +10,17 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 
 import { CartContex } from "../components/Contex/CartContex";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const Carrito = () => {
-  const { cart, incrementProduct, decrementProduct, delFromCart, clearCart } =
-    useContext(CartContex);
+  const {
+    cart,
+    updateState,
+    incrementProduct,
+    decrementProduct,
+    delFromCart,
+    clearCart,
+  } = useContext(CartContex);
 
   function subtotal(items) {
     return items
@@ -22,8 +28,13 @@ const Carrito = () => {
       .reduce((sum, i) => sum + i, 0);
   }
 
+  useEffect(() => {
+    updateState();
+    // eslint-disable-next-line
+  }, [cart]);
+
   return (
-    <TableContainer style={{overflowX:"auto"}}>
+    <TableContainer style={{ overflowX: "auto" }}>
       <Table sx={{ minWidth: 700 }} aria-label="spanning table">
         <TableHead>
           <TableRow>

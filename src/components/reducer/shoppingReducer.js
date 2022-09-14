@@ -6,6 +6,13 @@ export const initialState = {
 
 export function shoppingReducer(state, action) {
   switch (action.type) {
+    case TYPES.READ_STATE: {
+      return {
+        ...state,
+        cart: action.payload,
+      };
+    }
+
     case TYPES.ADD_TO_CART: {
       let itemInCart = state.cart.find((item) => item.id === action.payload.id);
 
