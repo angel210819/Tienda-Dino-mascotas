@@ -33,10 +33,10 @@ function CarouselInstagram() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }} mx="auto" >
+    <Box sx={{ maxWidth: 300, flexGrow: 1 }} mx="auto" >
       <Paper
         square
-        elevation={3}
+        elevation={1}
         sx={{
           display: "flex",
           alignItems: "center",
@@ -45,7 +45,7 @@ function CarouselInstagram() {
           bgcolor: "background.default",
         }}
       >
-        <Typography variant="h5" color="primary" ml={8}>
+        <Typography variant="h5" color="primary" ml={2}>
           NUESTROS CLIENTES
         </Typography>
       </Paper>
