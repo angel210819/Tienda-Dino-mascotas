@@ -25,6 +25,10 @@ const modificarCantidad = async (id, nombre, img, precio, quantity) => {
   });
 };
 
+const eliminarProducto = async (id) => {
+  await axios.delete(`http://localhost:5000/carrito/${id}`);
+};
+
 export function shoppingReducer(state, action) {
   switch (action.type) {
     case TYPES.READ_STATE: {
@@ -38,9 +42,7 @@ export function shoppingReducer(state, action) {
       let itemInCart = state.cart.find((item) => item.id === action.payload.id);
 
       return itemInCart
-        ? //aca va ir el metodo PUT
-
-          (modificarCantidad(
+        ? (modificarCantidad(
             action.payload.id,
             action.payload.nombre,
             action.payload.img,
@@ -64,10 +66,13 @@ export function shoppingReducer(state, action) {
           });
     }
     case TYPES.REMOVE_ALL_FROM_CART: {
-      return {
-        ...state,
-        cart: state.cart.filter((item) => item.id !== action.payload),
-      };
+      return (
+        eliminarProducto(action.payload),
+        {
+          ...state,
+          cart: state.cart.filter((item) => item.id !== action.payload),
+        }
+      );
     }
     case TYPES.INCREMENT: {
       let updatedCart = state.cart.map((curElem) => {
@@ -91,7 +96,7 @@ export function shoppingReducer(state, action) {
     case TYPES.DECREMENT: {
       let updatedCart = state.cart
         .map((curElem) => {
-          if (curElem.id === action.payload) {
+          if (curElem.id === action.payload && curElem.quantity > 1) {
             return (
               modificarCantidad(
                 curElem.id,
@@ -109,7 +114,9 @@ export function shoppingReducer(state, action) {
       return { ...state, cart: updatedCart };
     }
     case TYPES.CLEAR_CART:
-      return { cart: [] };
+      // eslint-disable-next-line
+      return state.cart.map((item) => eliminarProducto(item.id)), { cart: [] };
+
     default:
       return state;
   }
