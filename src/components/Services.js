@@ -15,7 +15,7 @@ export default function Services() {
 
      <Box>
         {/* Primer Grid secundario contenedor con imagen */}
-        <Grid item xs={12} md={6} xl={6} mt={2} textAlign="center">
+        <Grid item xs={12} md={6} xl={6} mt={4} textAlign="center">
           <img
             alt="paseo de perros"
             src={paseo}
