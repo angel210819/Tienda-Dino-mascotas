@@ -45,7 +45,7 @@ function CarouselInstagram() {
           bgcolor: "background.default",
         }}
       >
-        <Typography variant="h5" color="primary" ml={2}>
+        <Typography variant="h6" color="primary" ml={4}>
           NUESTROS CLIENTES
         </Typography>
       </Paper>
