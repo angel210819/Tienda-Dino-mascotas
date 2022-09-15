@@ -205,6 +205,13 @@
       "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_acana-dog-classic-praire-pultry6512.jpg?188",
       "precio": 3599,
       "quantity": 1
+    },
+    {
+      "id": "0002",
+      "nombre": "Royal Canin Indoor",
+      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_royalcaninindoor24973.jpg?188",
+      "precio": 4590,
+      "quantity": 1
     }
   ]
 }

@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Logo from "./../images/dinoBlanco.png";
-import Fono from "./../images/fono.png";
 import Badge from "@mui/material/Badge";
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
