@@ -4,32 +4,43 @@ import CardContent from "@mui/material/CardContent";
 
 import Typography from "@mui/material/Typography";
 
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {Link} from "@mui/material";
+
+import diego from '../sobreNosotros/images/diego.jpg'
+import vivi from '../sobreNosotros/images/vivi.jpg'
+import exe from '../sobreNosotros/images/exe.jpg'
+import incognito from '../sobreNosotros/images/incognito.png'
 
 
 
 export default function MediaCard() {
   return (
-    <Grid container  ml={10} spacing={8}>
+    <>
+    <Typography variant="h3" textAlign="center" my={2} color="primary">Desarrolladores</Typography>
+    
+    <Grid container  ml={6} spacing={8}>
       {integrantes.map((el) => {
         return (
           <Grid item xl={4} md={6} xs={10} >
             <Card sx={{ maxWidth: 345 }}>
-             <Grid>
-                <img alt={el.nombre} width="100%" height="140px" />
-             </Grid>
+             <figure width="100%">
+                <img alt={el.nombre} width="100%" height="250px" src={el.foto===null?incognito:el.foto} style={{objectFit:"cover"}} />
+                </figure>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div" textAlign="center">
+                <Typography gutterBottom variant="h5" component="div" textAlign="center" color="primary">
                   {el.nombre}
                 </Typography>
                 <Link href={el.linkedin} display="block" mt={2}>
-                    {el.linkedin}
+                    <Box component="span" sx={{marginRight:"5px",marginTop:"5px"}}><LinkedInIcon /></Box>
+                    {el.linkedin===""?"Desconocido":el.linkedin}
                 </Link>
-                <Link href={el.github} mt={2} display="block" >
-                    {el.github}
+                <Link href={el.github} mt={2} display="block"  >
+                <Box component="span" sx={{marginRight:"5px",marginTop:"5px"}}><GitHubIcon /></Box>
+                    {el.github===""?"Desconocido" : el.github}
                 </Link>
               </CardContent>
             </Card>
@@ -38,27 +49,28 @@ export default function MediaCard() {
         )
       })}
     </Grid>
+    </>
   )
 }
 
 const integrantes = [
   {
     id: 0,
-    foto: "vivi",
+    foto: vivi,
     nombre: "Viviana Fiocchi",
     linkedin: "https://www.linkedin.com/in/viviana-fiocchi-321a43102",
     github: "https://github.com/VivianaFiocchi",
   },
   {
     id: 1,
-    foto: "exe",
+    foto: exe,
     nombre: "Exequiel Ferreira",
     linkedin: "http://linkedin.com/in/exequiel-ferreira-b3484622b",
     github: "https://github.com/exe773",
   },
   {
     id: 2,
-    foto: "diego",
+    foto: diego,
     nombre: "Diego Mercado",
     linkedin: "https://www.linkedin.com/in/diego-mercado-pc",
     github: "https://github.com/Diego2997",
