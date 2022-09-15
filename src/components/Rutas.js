@@ -13,7 +13,7 @@ import SearchBar from "./barraBusqueda/SearchBar";
 
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../components/ThemeGlobal'
-
+import SobreNosotros from './sobreNosotros/SobreNosotros'
 
 const Rutas = () => {
   return (
