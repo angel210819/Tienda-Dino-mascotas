@@ -10,8 +10,10 @@ import Carrito from "./Carrito";
 
 import CartProvider from "../components/Contex/CartContex";
 import SearchBar from "./barraBusqueda/SearchBar";
+
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../components/ThemeGlobal'
+
 
 const Rutas = () => {
   return (
@@ -27,6 +29,7 @@ const Rutas = () => {
             path="/accesorios"
             element={<Products direccion="Accesorios" />}
           />
+          <Route path= "/sobreNosotros" element={<SobreNosotros />} />
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/busqueda" element={<SearchBar />} />
         </Routes>

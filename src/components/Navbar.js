@@ -31,6 +31,10 @@ const pages = [
     text: "Accesorios",
     direction: "/accesorios",
   },
+  {
+    text: "Sobre Nosotros",
+    direction: "/sobreNosotros"
+  }
 ];
 
 const Navbar = () => {
