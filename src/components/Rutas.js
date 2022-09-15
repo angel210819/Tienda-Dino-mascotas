@@ -10,6 +10,8 @@ import Carrito from "./Carrito";
 
 import CartProvider from "../components/Contex/CartContex";
 import SearchBar from "./barraBusqueda/SearchBar";
+import SobreNosotros from './sobreNosotros/SobreNosotros'
+
 
 const Rutas = () => {
   return (
@@ -24,6 +26,7 @@ const Rutas = () => {
             path="/accesorios"
             element={<Products direccion="Accesorios" />}
           />
+          <Route path= "/sobreNosotros" element={<SobreNosotros />} />
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/busqueda" element={<SearchBar />} />
         </Routes>
