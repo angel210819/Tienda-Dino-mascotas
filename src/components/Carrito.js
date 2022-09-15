@@ -8,6 +8,7 @@ import TableRow from "@mui/material/TableRow";
 import Button from "@material-ui/core/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
+import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
 
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext, useEffect } from "react";
@@ -91,15 +92,17 @@ const Carrito = () => {
           ))}
           <TableRow>
             <TableCell>
+              
               <Button
-                variant="contained"
+                variant="contained" color="secondary"
                 disableElevation
-                color="primary"
                 onClick={() => {
                   clearCart();
                 }}
               >
-                Limpiar Carrito
+                <CleaningServicesIcon fontSize="small"></CleaningServicesIcon>
+                 Limpiar Carrito
+                
               </Button>
             </TableCell>
             <TableCell colSpan={2}></TableCell>

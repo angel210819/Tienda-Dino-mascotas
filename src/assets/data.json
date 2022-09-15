@@ -184,5 +184,34 @@
     }
   ],
   "Accesorios": [],
-  "Carrito": []
+  "Carrito": [
+    {
+      "id": "0400",
+      "nombre": "PRO PLAN Dietas Veterinarias Cardiaco",
+      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_alimentosecoparaperroproplan-dietasveterinariascardiaco1459.jpg?188",
+      "precio": 3999,
+      "quantity": 1
+    },
+    {
+      "id": "0600",
+      "nombre": "Maintenance Criadores Adulto",
+      "img": "https://puppis.vteximg.com.br/arquivos/ids/158003-1000-1000/150002.png?v=635894318957130000",
+      "precio": 4140,
+      "quantity": 2
+    },
+    {
+      "id": "0300",
+      "nombre": "Acana Dog Classic Praire Pultry",
+      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_acana-dog-classic-praire-pultry6512.jpg?188",
+      "precio": 3599,
+      "quantity": 1
+    },
+    {
+      "id": "0002",
+      "nombre": "Royal Canin Indoor",
+      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_royalcaninindoor24973.jpg?188",
+      "precio": 4590,
+      "quantity": 1
+    }
+  ]
 }
