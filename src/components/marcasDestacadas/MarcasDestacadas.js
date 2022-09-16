@@ -1,25 +1,19 @@
 import React from "react";
-import { Marcas } from "../enlaceDeMarca/Marcas";
+import { Marcas } from "./Marcas";
 import { CardActionArea, Grid } from "@mui/material";
 
 const MarcasDestacadas = () => {
   return (
-    <Grid  padding="1rem" width="98%" mx="auto">
+    <Grid padding="1rem" width="98%" mx="auto">
       <Grid
         container
         columns={{ xs: 2, sm: 3, md: 4 }}
         justifyContent="center"
-        gap='50px'
-        
+        gap="60px"
       >
         {Marcas.map((item, index) => {
           return (
-            <Grid
-              className="borde"
-              boxShadow={0}
-              borderRadius={1}
-              key={index}
-            >
+            <Grid className="borde" boxShadow={0} borderRadius={1} key={index}>
               <CardActionArea>
                 <img
                   height="80px"

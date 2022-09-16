@@ -18,8 +18,6 @@ export default function Footer() {
         width="100%"
         color="primary"
         justifyContent="center"
-        
-        
         padding="3rem"
       >
         <Grid item xs={10} md={4} lg={4}>
@@ -39,7 +37,7 @@ export default function Footer() {
           </List>
         </Grid>
 
-        <Grid item xs={10} md={4} lg={4} >
+        <Grid item xs={10} md={4} lg={4}>
           <Typography variant="h6" color="primary" ml={2}>
             Contactanos
           </Typography>
@@ -50,7 +48,7 @@ export default function Footer() {
             </ListItem>
             <ListItem>
               <PhoneIcon color="primary" />
-              <Link href="/#">3513845741 (Solo Via Whatsapp)</Link>
+              <Link href="/#">3513845741 (Solo via Whatsapp)</Link>
             </ListItem>
             <ListItem>
               <MailIcon color="primary" />
@@ -65,16 +63,24 @@ export default function Footer() {
           </List>
         </Grid>
 
-        <Grid item xs={9} md={4} lg={4} >
+        <Grid item xs={9} md={4} lg={4}>
           <Typography variant="h6" color="primary" mb={2}>
             Sigamos Conectados
           </Typography>
-          <Link href="https://www.instagram.com/" target="_blank" fontSize={10} mr={1}>
+          <Link
+            href="https://www.instagram.com/"
+            target="_blank"
+            fontSize={10}
+            mr={1}
+          >
             <InstagramIcon color="primary" />
-            
           </Link>
-          <Link href="https://es-la.facebook.com/" target="_blank" fontSize={10}>
-             <FacebookIcon color="primary" />
+          <Link
+            href="https://es-la.facebook.com/"
+            target="_blank"
+            fontSize={10}
+          >
+            <FacebookIcon color="primary" />
           </Link>
         </Grid>
       </Grid>
@@ -87,7 +93,10 @@ export default function Footer() {
         </Grid>
         <Grid item xs={12} md={12} lg={8}>
           {tarjetas.map((el) => (
-           <Link key={el.id} href="/#"> <img  alt={el.alt} src={el.src} width="40px" /></Link>
+            <Link key={el.id} href="/#">
+              {" "}
+              <img alt={el.alt} src={el.src} width="40px" />
+            </Link>
           ))}
         </Grid>
       </Grid>

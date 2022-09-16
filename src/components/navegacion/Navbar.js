@@ -6,11 +6,11 @@ import {
   Menu,
   MenuItem,
   Box,
+  Badge,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-import Badge from "@mui/material/Badge";
-import { CartContex } from "../components/Contex/CartContex";
+import { CartContex } from "../Contex/CartContex";
 import { useContext } from "react";
 
 /*Arreglo de objetos con el Texto de los enlaces y las direcciones de las paginas a las que los mismo dirigen */
@@ -33,8 +33,8 @@ const pages = [
   },
   {
     text: "Sobre Nosotros",
-    direction: "/sobreNosotros"
-  }
+    direction: "/sobreNosotros",
+  },
 ];
 
 const Navbar = () => {
@@ -71,7 +71,7 @@ const Navbar = () => {
           open={Boolean(anchorElNav)}
           onClose={handleCloseNavMenu}
           sx={{
-            display: { xs: "block", md: "none" }, 
+            display: { xs: "block", md: "none" },
           }}
         >
           {/*mapeo de las paginas para generar los enlaces en el menu hamburguesa */}
