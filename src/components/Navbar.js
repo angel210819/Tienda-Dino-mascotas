@@ -71,7 +71,7 @@ const Navbar = () => {
           open={Boolean(anchorElNav)}
           onClose={handleCloseNavMenu}
           sx={{
-            display: { xs: "block", md: "none" },
+            display: { xs: "block", md: "none" }, 
           }}
         >
           {/*mapeo de las paginas para generar los enlaces en el menu hamburguesa */}

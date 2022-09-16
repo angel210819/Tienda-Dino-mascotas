@@ -9,20 +9,21 @@ const MarcasDestacadas = () => {
         container
         columns={{ xs: 2, sm: 3, md: 4 }}
         justifyContent="center"
-        gap='5px'
+        gap='50px'
+        
       >
         {Marcas.map((item, index) => {
           return (
             <Grid
               className="borde"
-              boxShadow={3}
+              boxShadow={0}
               borderRadius={1}
               key={index}
             >
               <CardActionArea>
                 <img
-                  height="100px"
-                  width="90%"
+                  height="80px"
+                  width="85px"
                   src={item.titulo}
                   alt="marcas"
                 />

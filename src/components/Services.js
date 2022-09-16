@@ -8,20 +8,15 @@ export default function Services() {
   return (
     // Contenedor principal
     <>
-   
-
-      {/* <hr/> */}
-
-
      <Box>
         {/* Primer Grid secundario contenedor con imagen */}
-        <Grid item xs={12} md={6} xl={6} mt={4} textAlign="center">
+        <Grid item xs={12} md={6} xl={6} mt={2} textAlign="center">
           <img
             alt="paseo de perros"
             src={paseo}
             width="65%"
             height="60%"
-            style={{ cursor: "pointer" , minWidth:"450px"}}
+            style={{ cursor: "pointer" , minWidth:"350px"}}
           />
         </Grid>
 
@@ -32,7 +27,7 @@ export default function Services() {
             src={adiestramiento}
             width="65%" 
             height="60%"
-            style={{ cursor: "pointer" , minWidth:"450px"}}
+            style={{ cursor: "pointer" , minWidth:"350px"}}
           />
         </Grid>
       </Box>

@@ -2,7 +2,6 @@ import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
@@ -33,22 +32,10 @@ function CarouselInstagram() {
   };
 
   return (
-    <Box sx={{ maxWidth: 300, flexGrow: 1 }} mx="auto" >
-      <Paper
-        square
-        elevation={1}
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          height: 50,
-          pl: 2,
-          bgcolor: "background.default",
-        }}
-      >
-        <Typography variant="h6" color="primary" ml={4}>
-          NUESTROS CLIENTES
-        </Typography>
-      </Paper>
+    <Box sx={{ maxWidth: 300, flexGrow: 1 }} mx="auto">
+      <Typography variant="h6" color="primary" ml={2}>
+        NUESTROS CLIENTES
+      </Typography>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
