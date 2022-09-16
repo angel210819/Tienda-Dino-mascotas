@@ -11,8 +11,13 @@ import Carrito from "./Carrito";
 import CartProvider from "../components/Contex/CartContex";
 import SearchBar from "./barraBusqueda/SearchBar";
 
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../components/ThemeGlobal'
+import SobreNosotros from './sobreNosotros/SobreNosotros'
+
 const Rutas = () => {
   return (
+    <ThemeProvider theme={theme}>
     <Router>
       <CartProvider>
         <Header />
@@ -24,12 +29,14 @@ const Rutas = () => {
             path="/accesorios"
             element={<Products direccion="Accesorios" />}
           />
+          <Route path= "/sobreNosotros" element={<SobreNosotros />} />
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/busqueda" element={<SearchBar />} />
         </Routes>
         <Footer />
       </CartProvider>
     </Router>
+    </ThemeProvider>
   );
 };
 

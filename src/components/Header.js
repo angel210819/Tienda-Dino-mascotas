@@ -5,15 +5,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import Logo from "./../images/dinoNegro.png";
-import Fono from "./../images/fono.png";
-import Carro from "./../images/carroCompras.png";
+import Logo from "./../images/dinoBlanco.png";
 import Badge from "@mui/material/Badge";
-import SearchIcon from "@mui/icons-material/Search";
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function ButtonAppBar() {
   const { cart } = useContext(CartContex);
@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
                 <img src={Logo} alt="Dino" height="45" width="45" />
               </Link>
             </IconButton>
-            <Typography sx={{ flexGrow: 1 }}>Dino Mascotas</Typography>
+            <Typography sx={{ flexGrow: 1 ,userSelect:"none"}}>DinoMascotas</Typography>
             <Navbar />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <Button color="inherit">
@@ -53,18 +53,18 @@ export default function ButtonAppBar() {
                   }}
                   to="./busqueda"
                 >
-                  <SearchIcon />
+                  <SearchIcon fontSize="large" color="action"/>
                 </Link>
               </Button>
               <Button color="inherit">
                 <Link color="inherit" to="./carrito">
                   <Badge badgeContent={cart.length} color="secondary">
-                    <img src={Carro} alt="Carro" height="30" width="30" />
+                  <ShoppingCartIcon fontSize="large" color="action"></ShoppingCartIcon>
                   </Badge>
                 </Link>
               </Button>
               <Button color="inherit">
-                <img src={Fono} alt="Fono" height="30" width="30" />
+              <WhatsAppIcon fontSize="large" color="action"></WhatsAppIcon>
               </Button>
             </Box>
           </Toolbar>

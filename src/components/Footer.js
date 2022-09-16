@@ -55,8 +55,7 @@ export default function Footer() {
             <ListItem>
               <MailIcon color="primary" />
               <ListItemText>
-                {" "}
-                <Link href="/#">nose@numen.com</Link>
+                <Link href="/#">academia@numen.com</Link>
               </ListItemText>
             </ListItem>
             <ListItem>
