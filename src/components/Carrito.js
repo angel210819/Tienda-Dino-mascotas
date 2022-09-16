@@ -2,15 +2,17 @@ import * as React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Button from "@material-ui/core/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext, useEffect } from "react";
+import { TableContainer } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+import CancelPresentationIcon from "@mui/icons-material/CancelPresentation";
 
 const Carrito = () => {
   const {
@@ -34,8 +36,8 @@ const Carrito = () => {
   }, []);
 
   return (
-    <TableContainer style={{ overflowX: "auto" }}>
-      <Table sx={{ minWidth: 700 }} aria-label="spanning table">
+    <TableContainer>
+      <Table aria-label="spanning table" stickyHeader sx={{ minWidth: 300 }}>
         <TableHead>
           <TableRow>
             <TableCell colSpan={2}></TableCell>
@@ -68,22 +70,22 @@ const Carrito = () => {
               </TableCell>
 
               <TableCell>{item.nombre}</TableCell>
-              <TableCell align="right">
-                <Button
+              <TableCell align="right" sx={{ minWidth: 100 }}>
+                <IconButton
                   onClick={() => {
                     decrementProduct(item.id);
                   }}
                 >
-                  -
-                </Button>
+                  <RemoveIcon style={{ color: "red" }} fontSize="small" />
+                </IconButton>
                 {item.quantity}
-                <Button
+                <IconButton
                   onClick={() => {
                     incrementProduct(item.id);
                   }}
                 >
-                  +
-                </Button>
+                  <AddIcon fontSize="small" style={{ color: "green" }} />
+                </IconButton>
               </TableCell>
               <TableCell align="right">{item.precio}</TableCell>
               <TableCell align="right">{item.quantity * item.precio}</TableCell>
@@ -91,16 +93,20 @@ const Carrito = () => {
           ))}
           <TableRow>
             <TableCell>
-              <Button
+              <IconButton
                 variant="contained"
+                size="small"
                 disableElevation
                 color="primary"
                 onClick={() => {
                   clearCart();
                 }}
               >
-                Limpiar Carrito
-              </Button>
+                <CancelPresentationIcon
+                  style={{ color: "red" }}
+                  fontSize="medium"
+                />
+              </IconButton>
             </TableCell>
             <TableCell colSpan={2}></TableCell>
             <TableCell align="right" colSpan={2}>
