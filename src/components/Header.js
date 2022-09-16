@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
                 <img src={Logo} alt="Dino" height="45" width="45" />
               </Link>
             </IconButton>
-            <Typography sx={{ flexGrow: 1 ,userSelect:"none"}} variant="h5">DinoMascotas</Typography>
+            <Typography sx={{ flexGrow: 1 ,userSelect:"none"}}>DinoMascotas</Typography>
             <Navbar />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <Button color="inherit">
