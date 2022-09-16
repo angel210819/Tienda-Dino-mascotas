@@ -1,14 +1,15 @@
-import * as React from "react";
 import { useState } from "react";
-import { styled } from "@mui/material/styles";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Typography from "@mui/material/Typography";
+import {
+  styled,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Typography,
+  Collapse,
+} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import IconButton from "@mui/material/IconButton";
-import Collapse from "@mui/material/Collapse";
 import ModalCarrito from "./ModalCarrito";
 
 const Cards = ({ id, image, nombre, descripcion, precio, peso }) => {
@@ -30,7 +31,7 @@ const Cards = ({ id, image, nombre, descripcion, precio, peso }) => {
   }));
 
   return (
-    <Card sx={{ maxWidth: "300px"}} key={id}>
+    <Card sx={{ maxWidth: "300px" }} key={id}>
       <CardMedia height="150px" alt="Comida">
         <img src={image} alt={nombre} height="250px" width="300px"></img>
       </CardMedia>

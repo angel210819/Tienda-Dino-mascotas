@@ -1,22 +1,21 @@
-import * as React from "react";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import MobileStepper from "@mui/material/MobileStepper";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import { useState } from "react";
+import {
+  useTheme,
+  Box,
+  MobileStepper,
+  Typography,
+  Button,
+} from "@mui/material";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Imagenes } from "./CarruselData.js";
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
-const images = Imagenes;
-
-function CarouselInstagram() {
+const CarouselInstagram = () => {
+  const images = Imagenes;
+  const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
   const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
 
   const handleNext = () => {
@@ -90,6 +89,6 @@ function CarouselInstagram() {
       />
     </Box>
   );
-}
+};
 
 export default CarouselInstagram;

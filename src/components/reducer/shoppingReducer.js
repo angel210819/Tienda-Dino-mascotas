@@ -1,4 +1,4 @@
-import { TYPES } from "../actions/ShoppingAction";
+import { TYPES } from "./ShoppingAction";
 import axios from "axios";
 
 export const initialState = {

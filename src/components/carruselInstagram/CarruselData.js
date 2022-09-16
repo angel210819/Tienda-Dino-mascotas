@@ -11,7 +11,6 @@ import ts10 from "../../images/carrusel/10.jpg";
 import ts11 from "../../images/carrusel/11.jpg";
 import ts12 from "../../images/carrusel/12.jpg";
 
-
 export const Imagenes = [
   {
     imgPath: ts1,

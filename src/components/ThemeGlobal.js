@@ -1,6 +1,5 @@
-import { createTheme } from '@mui/material/styles';
-import { grey, purple, deepPurple } from '@mui/material/colors';
-
+import { createTheme } from "@mui/material/styles";
+import { grey, purple, deepPurple } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
@@ -10,9 +9,9 @@ const theme = createTheme({
     secondary: {
       main: purple[400],
     },
-    action:{
-        main: grey[50],
-    }
+    action: {
+      main: grey[50],
+    },
   },
   typography: {
     fontFamily: [
@@ -30,4 +29,4 @@ const theme = createTheme({
   }
 });
 
-export default theme
+export default theme;
