@@ -184,27 +184,5 @@
     }
   ],
   "Accesorios": [],
-  "Carrito": [
-    {
-      "id": "0400",
-      "nombre": "PRO PLAN Dietas Veterinarias Cardiaco",
-      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_alimentosecoparaperroproplan-dietasveterinariascardiaco1459.jpg?188",
-      "precio": 3999,
-      "quantity": 3
-    },
-    {
-      "id": "0500",
-      "nombre": "Amity Low Grain Chicken Adulto",
-      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_amity_2_novapet2394.jpg?188",
-      "precio": 4399,
-      "quantity": 3
-    },
-    {
-      "id": "0004",
-      "nombre": "Vet Life Cat Renal",
-      "img": "https://dojiw2m9tvv09.cloudfront.net/11787/product/X_vetlifecatrenal5132.jpg?188",
-      "precio": 5990,
-      "quantity": 3
-    }
-  ]
+  "Carrito": []
 }
