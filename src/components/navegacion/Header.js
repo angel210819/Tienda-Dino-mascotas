@@ -1,19 +1,22 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import Logo from "./../../images/dinoNegro.png";
-import Badge from "@mui/material/Badge";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Badge,
+} from "@mui/material";
+
 import { CartContex } from "../Contex/CartContex";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+
 import Navbar from "./Navbar";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Logo from "./../../images/dinoNegro.png";
 
 const Header = () => {
   const { cart } = useContext(CartContex);

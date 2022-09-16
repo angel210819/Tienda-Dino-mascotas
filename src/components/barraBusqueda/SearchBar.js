@@ -20,7 +20,7 @@ const SearchBar = () => {
       const infoAcc = await datosAcc.data;
       setProductos(infoCan.concat(infoFel).concat(infoAcc));
     } catch (error) {
-      console.log("servidor caido");
+      console.log(error);
     }
   };
 

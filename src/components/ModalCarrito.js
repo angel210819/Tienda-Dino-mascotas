@@ -1,13 +1,8 @@
-import React from "react";
 import { CartContex } from "./Contex/CartContex";
 import { useContext, useState } from "react";
-
-import Modal from "@mui/material/Modal";
-import Box from "@mui/material/Box";
-import Button from "@material-ui/core/Button";
+import { Modal, Box, Button, Typography } from "@mui/material";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 
 const ModalCarrito = ({ id, image, nombre, precio }) => {
   const style = {

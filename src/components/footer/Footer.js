@@ -1,25 +1,23 @@
-import React from "react";
-import Grid from "@mui/material/Grid";
-import { Link, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Link,
+  ListItem,
+  ListItemText,
+  Typography,
+  Grid,
+  List,
+  Divider,
+} from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import List from "@mui/material/List";
-import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 import RoomIcon from "@mui/icons-material/Room";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import Divider from "@mui/material/Divider";
+import { Tarjetas } from "./Tarjetas";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <>
-      <Grid
-        container
-        width="100%"
-        color="primary"
-        justifyContent="center"
-        padding="3rem"
-      >
+      <Grid container width="100%" justifyContent="center" padding="3rem">
         <Grid item xs={10} md={4} lg={4}>
           <List>
             <ListItem>
@@ -43,21 +41,17 @@ export default function Footer() {
           </Typography>
           <List>
             <ListItem>
-              <WhatsAppIcon color="primary" />
+              <WhatsAppIcon color="primary" sx={{ marginRight: "10px" }} />
               <Link href="/#">5493513845741</Link>
             </ListItem>
             <ListItem>
-              <PhoneIcon color="primary" />
-              <Link href="/#">3513845741 (Solo via Whatsapp)</Link>
-            </ListItem>
-            <ListItem>
-              <MailIcon color="primary" />
+              <MailIcon color="primary" sx={{ marginRight: "10px" }} />
               <ListItemText>
                 <Link href="/#">academia@numen.com</Link>
               </ListItemText>
             </ListItem>
             <ListItem>
-              <RoomIcon color="primary" />
+              <RoomIcon color="primary" sx={{ marginRight: "10px" }} />
               <Link href="/#">Rafael Nuñez 4430</Link>
             </ListItem>
           </List>
@@ -92,7 +86,7 @@ export default function Footer() {
           </Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={8}>
-          {tarjetas.map((el) => (
+          {Tarjetas.map((el) => (
             <Link key={el.id} href="/#">
               {" "}
               <img alt={el.alt} src={el.src} width="40px" />
@@ -102,37 +96,6 @@ export default function Footer() {
       </Grid>
     </>
   );
-}
+};
 
-const tarjetas = [
-  {
-    id: 0,
-    src: "https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png",
-    alt: "Visa",
-  },
-  {
-    id: 1,
-    src: "https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png",
-    alt: "Mastercard",
-  },
-  {
-    id: 2,
-    src: "https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png",
-    alt: "AmericaExpress",
-  },
-  {
-    id: 3,
-    src: "https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png",
-    alt: "Naranja",
-  },
-  {
-    id: 4,
-    src: "https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png",
-    alt: "Nativa",
-  },
-  {
-    id: 5,
-    src: "https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercarddebit@2x.png",
-    alt: "Maestro",
-  },
-];
+export default Footer;

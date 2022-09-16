@@ -1,4 +1,3 @@
-import React from "react";
 import MarcasDestacadas from "./marcasDestacadas/MarcasDestacadas";
 import Detalle from "./barraInfo/Detalle";
 import CallActions from "./CallActions";

@@ -1,15 +1,15 @@
-import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  TableContainer,
+} from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
-
 import { CartContex } from "../components/Contex/CartContex";
 import { useContext, useEffect } from "react";
-import { TableContainer } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import CancelPresentationIcon from "@mui/icons-material/CancelPresentation";
@@ -68,7 +68,6 @@ const Carrito = () => {
                   height="75"
                 ></img>
               </TableCell>
-
               <TableCell>{item.nombre}</TableCell>
               <TableCell align="right" sx={{ minWidth: 100 }}>
                 <IconButton

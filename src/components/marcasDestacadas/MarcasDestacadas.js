@@ -1,4 +1,3 @@
-import React from "react";
 import { Marcas } from "./Marcas";
 import { CardActionArea, Grid } from "@mui/material";
 

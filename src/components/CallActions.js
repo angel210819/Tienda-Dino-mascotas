@@ -1,27 +1,29 @@
-import * as React from "react";
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+  Grid,
+} from "@mui/material";
 
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
 import imgCats from "../images/Cats.jpg";
 import imgDogs from "../images/Dogs.jpg";
 import imgVet from "../images/Veterinary.jpg";
 
-export default function CallActions() {
+const CallActions = () => {
   return (
-    <Grid container justifyContent="space-around" spacing={2} mx="auto" width="95%" >
+    <Grid
+      container
+      justifyContent="space-around"
+      spacing={2}
+      mx="auto"
+      width="95%"
+    >
       <Grid item xs={10} md={4} xl={4}>
         <Card>
-          <CardMedia
-            component="img"
-            alt="Gatos"
-            height="140"
-            image={imgCats}
-          />
+          <CardMedia component="img" alt="Gatos" height="140" image={imgCats} />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Club de Descuentos
@@ -88,4 +90,6 @@ export default function CallActions() {
       </Grid>
     </Grid>
   );
-}
+};
+
+export default CallActions;

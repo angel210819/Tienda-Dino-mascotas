@@ -1,12 +1,11 @@
 import { createContext, useReducer } from "react";
-
 import { shoppingReducer, initialState } from "../reducer/shoppingReducer";
 import { TYPES } from "../reducer/ShoppingAction";
 import axios from "axios";
 
 export const CartContex = createContext([]);
 
-const CartProvider = (props) => {
+const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(shoppingReducer, initialState);
 
   const updateState = async () => {
@@ -50,7 +49,7 @@ const CartProvider = (props) => {
         incrementProduct,
       }}
     >
-      {props.children}
+      {children}
     </CartContex.Provider>
   );
 };

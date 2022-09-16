@@ -1,4 +1,3 @@
-import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { imagenesDetalles } from "./ImagenesDetalles";
@@ -7,7 +6,6 @@ const Detalle = () => {
   return (
     <Grid
       sx={{
-        backgroundColor: "#DEF7FA",
         marginBottom: "30px",
         marginTop: "30px",
       }}

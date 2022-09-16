@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Button,
   Typography,
@@ -11,7 +10,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { CartContex } from "../Contex/CartContex";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 /*Arreglo de objetos con el Texto de los enlaces y las direcciones de las paginas a las que los mismo dirigen */
 const pages = [
@@ -20,11 +19,11 @@ const pages = [
     direction: "/",
   },
   {
-    text: "Alimentos Caninos",
+    text: "Perros",
     direction: "/dogFood",
   },
   {
-    text: "Alimentos Felinos",
+    text: "Gatos",
     direction: "/catFood",
   },
   {
@@ -32,14 +31,14 @@ const pages = [
     direction: "/accesorios",
   },
   {
-    text: "Sobre Nosotros",
+    text: "Nosotros",
     direction: "/sobreNosotros",
   },
 ];
 
 const Navbar = () => {
   /*Estado para hacer responsiva la Navbar */
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
   const { cart } = useContext(CartContex);
 
   /*Metodos para el menu hamburguesa */
