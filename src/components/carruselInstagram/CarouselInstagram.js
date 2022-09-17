@@ -32,7 +32,12 @@ const CarouselInstagram = () => {
 
   return (
     <Box sx={{ maxWidth: 300, flexGrow: 1 }} mx="auto">
-      <Typography variant="h6" color="primary" ml={2}>
+      <Typography
+        variant="h6"
+        color="primary"
+        marginLeft="50px"
+        fontFamily="Roboto"
+      >
         NUESTROS CLIENTES
       </Typography>
       <AutoPlaySwipeableViews

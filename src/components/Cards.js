@@ -31,24 +31,31 @@ const Cards = ({ id, image, nombre, descripcion, precio, peso }) => {
   }));
 
   return (
-    <Card sx={{ maxWidth: "300px" }} key={id}>
+    <Card sx={{ maxWidth: "300px" }} key={id} raised>
       <CardMedia height="150px" alt="Comida">
         <img src={image} alt={nombre} height="250px" width="300px"></img>
       </CardMedia>
       <CardContent height="200px" width="250px">
         <Typography
           height="60px"
-          variant="body2"
-          color="text.secondary"
+          color="black"
           textAlign={"center"}
+          fontFamily="Roboto"
+          fontSize="1rem"
         >
           {nombre}
         </Typography>
-        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
+        <Typography color="text.secondary" textAlign={"center"}>
           {peso}
         </Typography>
         <br></br>
-        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
+        <Typography
+          color="black"
+          textAlign={"center"}
+          fontFamily="Roboto"
+          fontSize="1.5rem"
+          fontStyle="italic"
+        >
           <span>$</span> {precio}
         </Typography>
       </CardContent>

@@ -30,7 +30,7 @@ const MediaCard = () => {
                     variant="h5"
                     component="div"
                     textAlign="center"
-                    color="primary"
+                    color="secondary"
                   >
                     {el.nombre}
                   </Typography>
