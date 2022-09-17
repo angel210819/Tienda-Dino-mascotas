@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 
 const Inicio = () => {
   return (
-    <div>
+    <Box>
       <Slider />
       <MarcasDestacadas />
       <CallActions />
@@ -20,7 +20,7 @@ const Inicio = () => {
         <Services />
       </Box>
       <Detalle />
-    </div>
+    </Box>
   );
 };
 

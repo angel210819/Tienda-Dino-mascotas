@@ -17,48 +17,48 @@ import { Tarjetas } from "./Tarjetas";
 const Footer = () => {
   return (
     <>
-      <Grid container width="100%" justifyContent="center" padding="3rem">
+      <Grid container width="100%" justifyContent="center" padding="3rem" sx={{ bgcolor: 'primary.main' }}>
         <Grid item xs={10} md={4} lg={4}>
           <List>
             <ListItem>
-              <Link href="/#">Términos y condiciones</Link>
+              <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">Términos y condiciones</Link>
             </ListItem>
             <ListItem>
-              <Link href="/#">Politica y privacidad</Link>
+              <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">Politica y privacidad</Link>
             </ListItem>
             <ListItem>
-              <Link href="/#">Politica de Devolucion y Cambios</Link>
+              <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">Politica de Devolucion y Cambios</Link>
             </ListItem>
             <ListItem>
-              <Link href="/#">Preguntas Frecuentes</Link>
+              <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">Preguntas Frecuentes</Link>
             </ListItem>
           </List>
         </Grid>
 
         <Grid item xs={10} md={4} lg={4}>
-          <Typography variant="h6" color="primary" ml={2}>
+          <Typography variant="h6" color="secondary" ml={2} fontFamily="Roboto">
             Contactanos
           </Typography>
           <List>
             <ListItem>
-              <WhatsAppIcon color="primary" sx={{ marginRight: "10px" }} />
-              <Link href="/#">5493513845741</Link>
+              <WhatsAppIcon color="secondary" sx={{ marginRight: "10px" }} />
+              <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">5493513845741</Link>
             </ListItem>
             <ListItem>
-              <MailIcon color="primary" sx={{ marginRight: "10px" }} />
+              <MailIcon color="secondary" sx={{ marginRight: "10px" }} />
               <ListItemText>
-                <Link href="/#">academia@numen.com</Link>
+                <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">academia@numen.com</Link>
               </ListItemText>
             </ListItem>
             <ListItem>
-              <RoomIcon color="primary" sx={{ marginRight: "10px" }} />
-              <Link href="/#">Rafael Nuñez 4430</Link>
+              <RoomIcon color="secondary" sx={{ marginRight: "10px" }} />
+              <Link href="/#" color="secondary" sx={{textDecoration:"none"}} fontFamily="Roboto">Rafael Nuñez 4430</Link>
             </ListItem>
           </List>
         </Grid>
 
         <Grid item xs={9} md={4} lg={4}>
-          <Typography variant="h6" color="primary" mb={2}>
+          <Typography variant="h6" color="secondary" mb={2} fontFamily="Roboto">
             Sigamos Conectados
           </Typography>
           <Link
@@ -66,30 +66,32 @@ const Footer = () => {
             target="_blank"
             fontSize={10}
             mr={1}
+            color="secondary"
+            sx={{textDecoration:"none"}}
           >
-            <InstagramIcon color="primary" />
+            <InstagramIcon color="secondary" />
           </Link>
           <Link
             href="https://es-la.facebook.com/"
             target="_blank"
             fontSize={10}
+            sx={{textDecoration:"none"}}
           >
-            <FacebookIcon color="primary" />
+            <FacebookIcon color="secondary" />
           </Link>
         </Grid>
       </Grid>
-      <Divider variant="middle" />
-      <Grid container justifyContent="center" padding="3rem">
+      <Grid container justifyContent="center" padding="0rem 0rem 3rem 3rem" sx={{ bgcolor: 'primary.main' }}>
         <Grid item xs={12} md={12} lg={4}>
-          <Typography variant="h6" color="primary" ml={2}>
+          <Typography variant="h6" color="secondary" ml={2} fontFamily="Roboto">
             Medios de Pago
           </Typography>
         </Grid>
         <Grid item xs={12} md={12} lg={8}>
           {Tarjetas.map((el) => (
-            <Link key={el.id} href="/#">
+            <Link key={el.id} href="/#" margin="3px">
               {" "}
-              <img alt={el.alt} src={el.src} width="40px" />
+              <img alt={el.alt} src={el.src} width="50px" />
             </Link>
           ))}
         </Grid>

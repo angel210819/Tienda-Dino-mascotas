@@ -28,7 +28,6 @@ const Header = () => {
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
           >
@@ -43,8 +42,8 @@ const Header = () => {
               <img src={Logo} alt="Dino" height="45" width="45" />
             </Link>
           </IconButton>
-          <Typography sx={{ flexGrow: 1, userSelect: "none" }}>
-            DinoMascotas
+          <Typography sx={{ flexGrow: 1, userSelect: "none" }} fontFamily="Segoe UI Symbol" fontSize="2rem" fontStyle='italic'>
+            Dino Mascotas
           </Typography>
           <Navbar />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
@@ -52,23 +51,22 @@ const Header = () => {
               <Link
                 style={{
                   textDecoration: "none",
-                  color: "black",
                   display: "flex",
                 }}
                 to="./busqueda"
               >
-                <SearchIcon color="action" />
+                <SearchIcon color="secondary"/>
               </Link>
             </Button>
             <Button color="inherit">
               <Link color="inherit" to="./carrito">
                 <Badge badgeContent={cart.length} color="secondary">
-                  <ShoppingCartIcon color="action"></ShoppingCartIcon>
+                  <ShoppingCartIcon color="secondary"></ShoppingCartIcon>
                 </Badge>
               </Link>
             </Button>
             <Button color="inherit">
-              <WhatsAppIcon color="action"></WhatsAppIcon>
+              <WhatsAppIcon color="secondary"></WhatsAppIcon>
             </Button>
           </Box>
         </Toolbar>
