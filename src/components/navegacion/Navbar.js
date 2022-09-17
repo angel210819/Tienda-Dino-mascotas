@@ -131,7 +131,7 @@ const Navbar = () => {
       >
         {/*mapeo de las paginas para generar los enlaces en la barra de navegacion */}
         {pages.map((page) => (
-          <Button key={page.text} onClick={handleCloseNavMenu} >
+          <Button key={page.text} onClick={handleCloseNavMenu}>
             <Link
               to={page.direction}
               style={{
@@ -139,7 +139,13 @@ const Navbar = () => {
                 color: "white",
               }}
             >
-              <Typography variant="overline" display="block" color="secondary" fontSize="1rem" fontFamily="Roboto">
+              <Typography
+                variant="overline"
+                display="block"
+                color="secondary"
+                fontSize="1rem"
+                fontFamily="Roboto"
+              >
                 {page.text}
               </Typography>
             </Link>

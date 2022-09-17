@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <br/>
+      <br />
       <AppBar component="nav">
         <Toolbar>
           <IconButton
@@ -43,7 +43,12 @@ const Header = () => {
               <img src={Logo} alt="Dino" height="45" width="45" />
             </Link>
           </IconButton>
-          <Typography sx={{ flexGrow: 1, userSelect: "none" }} fontFamily="Segoe UI Symbol" fontSize="2rem" fontStyle='italic'>
+          <Typography
+            sx={{ flexGrow: 1, userSelect: "none" }}
+            fontFamily="Segoe UI Symbol"
+            fontSize="2rem"
+            fontStyle="italic"
+          >
             Dino Mascotas
           </Typography>
           <Navbar />
@@ -56,7 +61,7 @@ const Header = () => {
                 }}
                 to="./busqueda"
               >
-                <SearchIcon color="secondary"/>
+                <SearchIcon color="secondary" />
               </Link>
             </Button>
             <Button color="inherit">
