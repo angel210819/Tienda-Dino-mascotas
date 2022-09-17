@@ -18,6 +18,9 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Logo from "./../../images/dinoNegro.png";
 
+
+
+
 const Header = () => {
   const { cart } = useContext(CartContex);
 
@@ -46,8 +49,8 @@ const Header = () => {
           <Typography
             sx={{ flexGrow: 1, userSelect: "none" }}
             fontFamily="Segoe UI Symbol"
-            fontSize="2rem"
             fontStyle="italic"
+            variant="h1"
           >
             Dino Mascotas
           </Typography>

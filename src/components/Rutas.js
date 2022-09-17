@@ -14,7 +14,7 @@ import theme from "../components/ThemeGlobal";
 
 const Rutas = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}> 
       <Router>
         <CartProvider>
           <Header />
