@@ -3,7 +3,7 @@ import { CardActionArea, Grid } from "@mui/material";
 
 const MarcasDestacadas = () => {
   return (
-    <Grid padding="1rem" width="98%" mx="auto">
+    <Grid padding="1rem" width="95%" mx="auto">
       <Grid
         container
         columns={{ xs: 2, sm: 3, md: 4 }}
@@ -13,11 +13,11 @@ const MarcasDestacadas = () => {
         {Marcas.map((item, index) => {
           return (
             <Grid className="borde" boxShadow={0} borderRadius={1} key={index}>
-              <CardActionArea>
+              <CardActionArea href={item.pagina} target="_blank">
                 <img
                   height="80px"
-                  width="85px"
-                  src={item.titulo}
+                  width="110px"
+                  src={item.imagen}
                   alt="marcas"
                 />
               </CardActionArea>

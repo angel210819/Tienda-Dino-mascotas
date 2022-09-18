@@ -5,6 +5,7 @@ import {
   TableHead,
   TableRow,
   TableContainer,
+  Typography,
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
@@ -41,10 +42,27 @@ const Carrito = () => {
         <TableHead>
           <TableRow>
             <TableCell colSpan={2}></TableCell>
-            <TableCell>Producto</TableCell>
-            <TableCell align="right">Cantidad</TableCell>
-            <TableCell align="right">Precio Unitario</TableCell>
-            <TableCell align="right">Subtotal</TableCell>
+            <TableCell>
+              {" "}
+              <Typography fontFamily="Roboto" fontSize="1.1rem" color="primary">
+                Producto
+              </Typography>
+            </TableCell>
+            <TableCell align="right">
+              <Typography fontFamily="Roboto" fontSize="1.1rem" color="primary">
+                Cantidad
+              </Typography>
+            </TableCell>
+            <TableCell align="right">
+              <Typography fontFamily="Roboto" fontSize="1.1rem" color="primary">
+                Precio Unitario
+              </Typography>
+            </TableCell>
+            <TableCell align="right">
+              <Typography fontFamily="Roboto" fontSize="1.1rem" color="primary">
+                Subtotal
+              </Typography>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -68,7 +86,11 @@ const Carrito = () => {
                   height="75"
                 ></img>
               </TableCell>
-              <TableCell>{item.nombre}</TableCell>
+              <TableCell>
+                <Typography fontFamily="Roboto" fontSize="0.9rem">
+                  {item.nombre}
+                </Typography>{" "}
+              </TableCell>
               <TableCell align="right" sx={{ minWidth: 100 }}>
                 <IconButton
                   onClick={() => {
@@ -76,7 +98,7 @@ const Carrito = () => {
                   }}
                 >
                   <RemoveIcon style={{ color: "red" }} fontSize="small" />
-                </IconButton>
+                </IconButton>{" "}
                 {item.quantity}
                 <IconButton
                   onClick={() => {
@@ -86,8 +108,18 @@ const Carrito = () => {
                   <AddIcon fontSize="small" style={{ color: "green" }} />
                 </IconButton>
               </TableCell>
-              <TableCell align="right">{item.precio}</TableCell>
-              <TableCell align="right">{item.quantity * item.precio}</TableCell>
+              <TableCell align="right">
+                <Typography fontFamily="Roboto" fontSize="0.9rem">
+                  {" "}
+                  ${item.precio}
+                </Typography>
+              </TableCell>
+              <TableCell align="right">
+                <Typography fontFamily="Roboto" fontSize="0.9rem">
+                  {" "}
+                  ${item.quantity * item.precio}
+                </Typography>
+              </TableCell>
             </TableRow>
           ))}
           <TableRow>
@@ -109,9 +141,20 @@ const Carrito = () => {
             </TableCell>
             <TableCell colSpan={2}></TableCell>
             <TableCell align="right" colSpan={2}>
-              Total
+              <Typography fontFamily="Roboto" fontSize="1.1rem" color="primary">
+                Total
+              </Typography>
             </TableCell>
-            <TableCell align="right">{subtotal(cart)}</TableCell>
+            <TableCell align="right">
+              {" "}
+              <Typography
+                fontFamily="Roboto"
+                fontSize="1.1rem"
+                fontStyle="italic"
+              >
+                ${subtotal(cart)}
+              </Typography>{" "}
+            </TableCell>
           </TableRow>
         </TableBody>
       </Table>
