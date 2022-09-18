@@ -18,15 +18,11 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Logo from "./../../images/dinoNegro.png";
 
-
-
-
 const Header = () => {
   const { cart } = useContext(CartContex);
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <br />
+    <Box sx={{ flexGrow: 1 }} marginBottom="5rem">
       <AppBar component="nav">
         <Toolbar>
           <IconButton
@@ -80,10 +76,6 @@ const Header = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      <br />
-      <br />
-      <br />
-      <br />
     </Box>
   );
 };
