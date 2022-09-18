@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 
 import { CartContex } from "../Contex/CartContex";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Navbar from "./Navbar";
@@ -19,7 +19,12 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Logo from "./../../images/dinoNegro.png";
 
 const Header = () => {
-  const { cart } = useContext(CartContex);
+  const { cart, updateState } = useContext(CartContex);
+
+  useEffect(() => {
+    updateState();
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <Box sx={{ flexGrow: 1 }} marginBottom="5rem">
