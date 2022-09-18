@@ -1,4 +1,12 @@
-import { Box, Grid, Link, Typography, CardContent, Card , CardMedia} from "@mui/material";
+import {
+  Box,
+  Grid,
+  Link,
+  Typography,
+  CardContent,
+  Card,
+  CardMedia,
+} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Desarrolladores } from "./Desarrolladores";
@@ -10,18 +18,20 @@ const MediaCard = () => {
       <Typography variant="h2" textAlign="center" my={2} color="primary">
         Desarrolladores
       </Typography>
-      <br/>
-      <br/>
-      <Grid container
-      display="flex"
-      justifyContent="space-evenly"
-      spacing={3}
-      mx="auto">
-        {Desarrolladores.map((el) => {
+      <br />
+      <br />
+      <Grid
+        container
+        display="flex"
+        justifyContent="space-evenly"
+        spacing={3}
+        mx="auto"
+      >
+        {Desarrolladores.map((el, i) => {
           return (
-            <Grid item xs={10} md={4} xl={4}>
+            <Grid item key={i} xs={10} md={4} xl={4}>
               <Card sx={{ maxWidth: "300px" }}>
-              <CardMedia height="100px" alt="Comida" >
+                <CardMedia height="100px" alt="Comida">
                   <img
                     alt={el.nombre}
                     width="300px"
@@ -56,9 +66,16 @@ const MediaCard = () => {
                     >
                       <GitHubIcon />
                     </Box>
-                    {el.github === "" ? <> Desconocido <br/><br/> </>: el.github}
+                    {el.github === "" ? (
+                      <>
+                        {" "}
+                        Desconocido <br />
+                        <br />{" "}
+                      </>
+                    ) : (
+                      el.github
+                    )}
                   </Link>
-              
                 </CardContent>
               </Card>
             </Grid>

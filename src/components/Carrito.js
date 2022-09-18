@@ -127,7 +127,6 @@ const Carrito = () => {
               <IconButton
                 variant="contained"
                 size="small"
-                disableElevation
                 color="primary"
                 onClick={() => {
                   clearCart();
