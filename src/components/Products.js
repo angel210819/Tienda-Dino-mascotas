@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
-import { Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
+
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
 import Loader from "./Loader";
