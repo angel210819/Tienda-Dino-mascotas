@@ -37,6 +37,9 @@ const CarouselInstagram = () => {
         color="primary"
         marginLeft="50px"
         fontFamily="Roboto"
+        sx={{
+          display: { md: "none" },
+        }}
       >
         NUESTROS CLIENTES
       </Typography>
