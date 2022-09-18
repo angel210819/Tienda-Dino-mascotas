@@ -5,7 +5,6 @@ import {
   Typography,
   Grid,
   List,
-  Divider,
 } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import MailIcon from "@mui/icons-material/Mail";

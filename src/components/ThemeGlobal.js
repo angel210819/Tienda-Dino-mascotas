@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material/styles";
-import { grey } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
@@ -34,7 +33,6 @@ theme.typography.h1 = {
   [theme.breakpoints.up("md")]: {
     fontSize: "2rem",
   },
-  
 };
 theme.typography.h2 = {
   fontSize: "2.2rem",
@@ -44,7 +42,6 @@ theme.typography.h2 = {
   [theme.breakpoints.up("md")]: {
     fontSize: "2rem",
   },
-}
+};
 
-export default theme
-
+export default theme;

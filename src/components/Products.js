@@ -1,9 +1,10 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
-import { Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
+
 import Grid2 from "@mui/material/Unstable_Grid2";
 import Cards from "./Cards";
 import Loader from "./Loader";
+import { Typography } from "@mui/material";
 
 const Products = (props) => {
   const [post, setPost] = useState([]);
@@ -56,7 +57,9 @@ const Products = (props) => {
                 );
               })
             ) : (
-              <h1>Sin existencias</h1>
+              <Typography fontFamily="Roboto" variant="h1" fontStyle="italic">
+                Sin existencias
+              </Typography>
             )}
           </Grid2>
         </Fragment>
