@@ -1,7 +1,7 @@
 import diego from "../../images/nosotros/diego.jpg";
 import vivi from "../../images/nosotros/vivi.jpg";
 import exe from "../../images/nosotros/exe.jpg";
-
+import mirko from '../../images/nosotros/mirko.jpeg'
 export const Desarrolladores = [
   {
     id: 0,
@@ -26,7 +26,7 @@ export const Desarrolladores = [
   },
   {
     id: 3,
-    foto: null,
+    foto: mirko,
     nombre: "Angel Juarez",
     linkedin: "www.linkedin.com/in/angel-mirko-juarez-166776224",
     github: "https://github.com/angel210819",
